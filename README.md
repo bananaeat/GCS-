@@ -20,3 +20,7 @@ changes to it, along with an explanation of what it is you changed.
 When adding page references, please use the abbreviations from
 [this list](https://gurpscharactersheet.com/page_references.html). If the book isn't in the list
 yet, please ask what should be used so that this list can be updated appropriately.
+
+--------------------------------------------------------------------------------------------------------------------
+
+以上是原库的介绍。这个repo是为了汉化库中的各种名词创建的。仍在施工中。
