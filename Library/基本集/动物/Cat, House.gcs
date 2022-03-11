@@ -505,7 +505,7 @@
 		}
 	},
 	"created_date": "May 16, 2020, 12:00 AM",
-	"modified_date": "Jun 20, 2020, 1:38 PM",
+	"modified_date": "Mar 10, 2022, 5:27 PM",
 	"profile": {
 		"name": "House Cat",
 		"weight": "10 lb",
@@ -637,21 +637,21 @@
 			}
 		}
 	],
-	"total_points": -59,
+	"total_points": -35,
 	"advantages": [
 		{
 			"type": "advantage",
-			"id": "7d4c984b-b6ed-45ed-9a94-914a0ea73b24",
-			"name": "Catfall",
+			"id": "41ff806c-e648-47ec-ada7-9ddc6498b82b",
+			"name": "猫式落体",
 			"physical": true,
 			"exotic": true,
 			"base_points": 10,
 			"modifiers": [
 				{
 					"type": "modifier",
-					"id": "931933b8-ca69-4246-9c83-8857752428ec",
+					"id": "0374665b-9b03-4765-82fe-f5ba6735ca12",
 					"disabled": true,
-					"name": "Feather Fall",
+					"name": "羽落",
 					"reference": "P43",
 					"cost_type": "percentage",
 					"cost": 20,
@@ -659,9 +659,9 @@
 				},
 				{
 					"type": "modifier",
-					"id": "005f605c-5dd5-477c-be87-a83d9170371b",
+					"id": "a58109c3-e497-4f9e-b1ab-174baadf6938",
 					"disabled": true,
-					"name": "Parachute",
+					"name": "降落伞",
 					"reference": "P43",
 					"cost_type": "percentage",
 					"cost": -30,
@@ -673,13 +673,13 @@
 				"points": 10
 			},
 			"categories": [
-				"Advantage"
+				"优势"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "a451713a-3f66-46d8-bc81-3651d2132b01",
-			"name": "Claws, Sharp (Feet)",
+			"id": "22f88e4f-1134-4af6-bfe6-f87c88db88d3",
+			"name": "利爪（脚）",
 			"physical": true,
 			"base_points": 5,
 			"weapons": [
@@ -689,7 +689,7 @@
 						"type": "cut",
 						"st": "thr"
 					},
-					"usage": "Kick",
+					"usage": "踢击",
 					"reach": "C,1",
 					"parry": "No",
 					"block": "No",
@@ -706,12 +706,12 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling",
+							"name": "空手技击",
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Karate",
+							"name": "斗殴",
 							"modifier": -2
 						}
 					]
@@ -722,13 +722,13 @@
 				"points": 5
 			},
 			"categories": [
-				"Advantage"
+				"优势"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "7df8e1fe-ab2a-4608-9f7a-72efe9e3d168",
-			"name": "Combat Reflexes",
+			"id": "d9cf4618-1aa7-40c5-8f00-6edfcf44d881",
+			"name": "战斗反射",
 			"mental": true,
 			"base_points": 15,
 			"reference": "B43",
@@ -744,7 +744,7 @@
 						"has": false,
 						"name": {
 							"compare": "is",
-							"qualifier": "Enhanced Time Sense"
+							"qualifier": "增强时间感"
 						}
 					}
 				]
@@ -756,7 +756,7 @@
 					"selection_type": "skills_with_name",
 					"name": {
 						"compare": "starts_with",
-						"qualifier": "fast-draw"
+						"qualifier": "即时备战"
 					}
 				},
 				{
@@ -778,11 +778,21 @@
 					"type": "attribute_bonus",
 					"amount": 2,
 					"attribute": "fright_check"
+				},
+				{
+					"type": "conditional_modifier",
+					"amount": 6,
+					"situation": "从心理震慑中恢复的IQ检定中"
+				},
+				{
+					"type": "conditional_modifier",
+					"amount": 1,
+					"situation": "在避免突袭的对抗中+1(如果你是队伍的领导者，则获得+2)"
 				}
 			],
-			"notes": "Never freeze; +6 on all IQ rolls to wake up or to recover from surprise or mental stun; Your side gets +1 to initiative rolls (+2 if you're the leader)",
+			"notes": "你永远不会被突然出现的意外情况“惊呆”",
 			"categories": [
-				"Advantage"
+				"优势"
 			]
 		},
 		{
@@ -797,8 +807,8 @@
 			"children": [
 				{
 					"type": "advantage",
-					"id": "6dd1a9c1-037a-41ae-9417-cbb478e9ea0d",
-					"name": "Cannot Speak",
+					"id": "01084cd0-eba5-45d5-87be-1570ec717336",
+					"name": "无法交谈",
 					"physical": true,
 					"base_points": -15,
 					"reference": "B125",
@@ -814,28 +824,34 @@
 								"has": false,
 								"name": {
 									"compare": "is",
-									"qualifier": "stuttering"
+									"qualifier": "口齿不清"
 								}
 							}
 						]
 					},
 					"categories": [
-						"Disadvantage"
+						"劣势"
 					]
 				},
 				{
 					"type": "advantage",
-					"id": "2b8e48ad-fe11-49c5-9f44-68781d820d25",
-					"name": "Hidebound",
+					"id": "72561543-c5e2-4704-8ec8-b6b48def8336",
+					"name": "思想僵化",
 					"mental": true,
 					"base_points": -5,
 					"reference": "B138",
 					"calc": {
 						"points": -5
 					},
-					"notes": "-2 penalty on any task that requires creativity or invention, including most rolls against Artist skill, all Engineer rolls for new inventions, and all skill rolls made to use the Gadgeteer advantage.",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"amount": -2,
+							"situation": "在需要创造力或发明精神的事务的检定上有-2减值，包括大多数艺术创作技能检定，所有用来发明的工程学技能检定，以及使用发明奇才优势的所有技能检定"
+						}
+					],
 					"categories": [
-						"Disadvantage"
+						"劣势"
 					]
 				},
 				{
@@ -875,14 +891,14 @@
 			"children": [
 				{
 					"type": "advantage",
-					"id": "18cf0cb1-6757-4de2-9ef7-5edfdc3f319b",
-					"name": "Extra Legs",
+					"id": "83e0870d-ee02-47eb-bbb7-feb614a4243e",
+					"name": "额外腿部",
 					"physical": true,
 					"exotic": true,
 					"modifiers": [
 						{
 							"type": "modifier",
-							"id": "65731268-8958-4443-83df-adac86574490",
+							"id": "5c6863bf-02ed-4746-a233-8c0ef0da8887",
 							"name": "4",
 							"reference": "B54",
 							"cost_type": "points",
@@ -891,9 +907,9 @@
 						},
 						{
 							"type": "modifier",
-							"id": "839b61f4-5283-4722-9212-11dcb4c8da35",
+							"id": "e6b04d10-c088-4287-b0b8-56506342b3da",
 							"disabled": true,
-							"name": "@5 or 6@",
+							"name": "@5到6条：数量@",
 							"reference": "B55",
 							"cost_type": "points",
 							"cost": 10,
@@ -901,9 +917,9 @@
 						},
 						{
 							"type": "modifier",
-							"id": "4e701f94-02fe-42e6-8eac-6674406626fa",
+							"id": "fe1c4ea0-e209-40c6-ae70-2d26e3a557e7",
 							"disabled": true,
-							"name": "@7+@",
+							"name": "@7条以上：数量@",
 							"reference": "B55",
 							"cost_type": "points",
 							"cost": 15,
@@ -911,9 +927,9 @@
 						},
 						{
 							"type": "modifier",
-							"id": "dbb37d7c-c93d-42bd-939c-b7712c8b6fa0",
+							"id": "404000be-32bb-4e40-a033-69ae732971e6",
 							"disabled": true,
-							"name": "Long",
+							"name": "长",
 							"reference": "B55",
 							"cost_type": "percentage",
 							"cost": 100,
@@ -922,9 +938,9 @@
 						},
 						{
 							"type": "modifier",
-							"id": "c2e34242-820c-4e6d-bc7b-b13d28c60127",
+							"id": "f1276887-e466-4cbf-8824-81fdd71731db",
 							"disabled": true,
-							"name": "Cannot Kick",
+							"name": "不能踢击",
 							"reference": "B55",
 							"cost_type": "percentage",
 							"cost": -50,
@@ -932,9 +948,9 @@
 						},
 						{
 							"type": "modifier",
-							"id": "66c069c1-078a-42c4-ba8e-5de2af565e2e",
+							"id": "794aef4b-8214-4948-b830-458c168eac7f",
 							"disabled": true,
-							"name": "Extra Flexible",
+							"name": "非常灵活",
 							"reference": "MATG27",
 							"cost_type": "percentage",
 							"cost": 50,
@@ -942,9 +958,9 @@
 						},
 						{
 							"type": "modifier",
-							"id": "399735f3-e26a-42ad-9fba-2b101690ac77",
+							"id": "07a2ee6b-8ce8-4a73-ae1d-c5e4992f8a01",
 							"disabled": true,
-							"name": "Prehensile Feet",
+							"name": "可抓握的脚",
 							"reference": "MATG28",
 							"cost_type": "percentage",
 							"cost": 20,
@@ -956,13 +972,13 @@
 						"points": 5
 					},
 					"categories": [
-						"Advantage"
+						"优势"
 					]
 				},
 				{
 					"type": "advantage",
-					"id": "87b03654-9bd9-4112-9d00-a65704114709",
-					"name": "Horizontal",
+					"id": "e0644a43-b88e-4f5e-9c63-b6c4d664e169",
+					"name": "非直立",
 					"physical": true,
 					"exotic": true,
 					"base_points": -10,
@@ -971,7 +987,7 @@
 						"points": -10
 					},
 					"categories": [
-						"Disadvantage"
+						"劣势"
 					]
 				},
 				{
@@ -1037,10 +1053,10 @@
 					"parry": "No",
 					"block": "No",
 					"calc": {
-						"level": 16,
+						"level": 14,
 						"parry": "No",
 						"block": "No",
-						"damage": "1d-5 cut"
+						"damage": "1d-6 cut"
 					},
 					"defaults": [
 						{
@@ -1065,8 +1081,8 @@
 	"skills": [
 		{
 			"type": "skill",
-			"id": "763b2cea-cbbd-4027-bef6-65ac71fd68e0",
-			"name": "Brawling",
+			"id": "8f203f13-57fe-4339-b9b1-b984e3d8c12a",
+			"name": "斗殴",
 			"reference": "B182",
 			"difficulty": "dx/e",
 			"points": 4,
@@ -1082,7 +1098,7 @@
 					"selection_type": "weapons_with_required_skill",
 					"name": {
 						"compare": "is",
-						"qualifier": "Brawling"
+						"qualifier": "斗殴"
 					},
 					"level": {
 						"compare": "at_least",
@@ -1091,14 +1107,14 @@
 				}
 			],
 			"categories": [
-				"Combat/Weapon",
-				"Melee Combat"
+				"战斗/武器",
+				"近战战斗"
 			]
 		},
 		{
 			"type": "skill",
-			"id": "00fc38f0-5afc-40d3-84b4-8324d41bbcf0",
-			"name": "Jumping",
+			"id": "d17d269b-b487-4261-aaaa-425f06beb9f8",
+			"name": "跳跃",
 			"reference": "B203",
 			"difficulty": "dx/e",
 			"points": 1,
@@ -1107,17 +1123,17 @@
 				"rsl": "DX+0"
 			},
 			"categories": [
-				"Athletic"
+				"运动"
 			]
 		},
 		{
 			"type": "skill",
-			"id": "7fc574f6-7312-465b-94e4-d263e31e0912",
-			"name": "Stealth",
+			"id": "7ee06cd4-2fab-488a-8de8-8237ff4377b5",
+			"name": "潜行",
 			"reference": "B222",
 			"encumbrance_penalty_multiplier": 1,
 			"difficulty": "dx/a",
-			"points": 2,
+			"points": 1,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -5,
@@ -1126,8 +1142,8 @@
 				"points": -9
 			},
 			"calc": {
-				"level": 14,
-				"rsl": "DX+0"
+				"level": 13,
+				"rsl": "DX-1"
 			},
 			"defaults": [
 				{
@@ -1140,9 +1156,9 @@
 				}
 			],
 			"categories": [
-				"Criminal/Street",
-				"Police",
-				"Spy"
+				"犯罪/街道",
+				"警察",
+				"间谍"
 			]
 		}
 	],
@@ -1150,7 +1166,7 @@
 		{
 			"type": "note",
 			"id": "e0b2ad0c-feec-44ee-9ba7-15ee7eb401d1",
-			"text": "A domestic feline, kept as a pet, familiar, or mouser.\n\nCats are only domesticated in the sense that they tend to hang around human settlements. It is a very rare trainer who can teach a cat a trick it doesn’t feel like learning . . .",
+			"text": "一种被驯化的猫科动物，通常作为宠物或捕鼠工具而饲养。\n\n猫科动物只有经过驯养才会留在人类聚居地附近。非常杰出的训练者才可以教导猫科动物学习一个它并不想学的技能。",
 			"reference": "B456"
 		}
 	],

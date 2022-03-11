@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jan 1, 2008, 12:00 AM",
-	"modified_date": "Jun 21, 2020, 11:31 AM",
+	"modified_date": "Mar 9, 2022, 7:27 PM",
 	"profile": {
 		"player_name": "NPC",
 		"name": "Haut-Cornet \"Louis\" d'Antares",
@@ -1189,6 +1189,7 @@
 					"name": "Combat Reflexes",
 					"mental": true,
 					"base_points": 15,
+					"userdesc": "[IQ +6 Wake up or to recover from surprise or mental stun][+1 to initiative rolls][+2 to initiative rolls if leader]",
 					"reference": "B43",
 					"calc": {
 						"points": 15
@@ -1224,7 +1225,7 @@
 							"attribute": "fright_check"
 						}
 					],
-					"notes": "Never freeze; +6 on all IQ rolls to wake up or to recover from surprise or mental stun; Your side gets +1 to initiative rolls (+2 if you're the leader)",
+					"notes": "Never freeze; +6 on all IQ rolls to wake up or to recover from surprise or mental stun; Your side gets +1 to initiative rolls; (+2 if you're the leader)",
 					"categories": [
 						"Advantage"
 					]
