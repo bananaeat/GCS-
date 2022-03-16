@@ -1,7 +1,7 @@
 {
 	"type": "character",
 	"version": 2,
-	"id": "68da4776-46a2-4fa3-8f9b-1ba9a8f1dadd",
+	"id": "f8425ca3-499a-436a-bc63-8ccbc3cdb210",
 	"settings": {
 		"default_length_units": "ft_in",
 		"default_weight_units": "lb",
@@ -347,7 +347,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -362,7 +362,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 2
+							"all": 3
 						}
 					}
 				},
@@ -377,7 +377,7 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -392,7 +392,7 @@
 					"calc": {
 						"roll_range": "6",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -407,7 +407,7 @@
 					"calc": {
 						"roll_range": "7-8",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -422,7 +422,7 @@
 					"calc": {
 						"roll_range": "9-11",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -437,7 +437,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -452,7 +452,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -482,7 +482,7 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -497,43 +497,42 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				}
 			]
 		}
 	},
-	"created_date": "Feb 16, 2014, 12:00 AM",
-	"modified_date": "Jun 20, 2020, 1:49 PM",
+	"created_date": "Feb 9, 2014, 12:00 AM",
+	"modified_date": "Jun 20, 2020, 2:00 PM",
 	"profile": {
-		"name": "Heavy Warhorse",
-		"weight": "1900 lb",
-		"SM": 1
+		"name": "北美灰狼",
+		"weight": "120 lb"
 	},
 	"attributes": [
 		{
 			"attr_id": "st",
-			"adj": 14,
+			"adj": 0,
 			"calc": {
-				"value": 24,
-				"points": 70
+				"value": 10,
+				"points": 0
 			}
 		},
 		{
 			"attr_id": "dx",
-			"adj": -1,
+			"adj": 2,
 			"calc": {
-				"value": 9,
-				"points": -12
+				"value": 12,
+				"points": 24
 			}
 		},
 		{
 			"attr_id": "iq",
-			"adj": -7,
+			"adj": -6,
 			"calc": {
-				"value": 3,
-				"points": -140
+				"value": 4,
+				"points": -120
 			}
 		},
 		{
@@ -546,33 +545,33 @@
 		},
 		{
 			"attr_id": "will",
-			"adj": 8,
+			"adj": 7,
 			"calc": {
 				"value": 11,
-				"points": 40
+				"points": 35
 			}
 		},
 		{
 			"attr_id": "fright_check",
 			"adj": 0,
 			"calc": {
-				"value": 13,
+				"value": 11,
 				"points": 0
 			}
 		},
 		{
 			"attr_id": "per",
-			"adj": 9,
+			"adj": 10,
 			"calc": {
-				"value": 12,
-				"points": 45
+				"value": 14,
+				"points": 50
 			}
 		},
 		{
 			"attr_id": "vision",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -580,7 +579,7 @@
 			"attr_id": "hearing",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -588,7 +587,7 @@
 			"attr_id": "taste_smell",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -596,7 +595,7 @@
 			"attr_id": "touch",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -604,16 +603,16 @@
 			"attr_id": "basic_speed",
 			"adj": 0,
 			"calc": {
-				"value": 5.25,
+				"value": 6,
 				"points": 0
 			}
 		},
 		{
 			"attr_id": "basic_move",
-			"adj": 2,
+			"adj": 3,
 			"calc": {
-				"value": 7,
-				"points": 10
+				"value": 9,
+				"points": 15
 			}
 		},
 		{
@@ -631,245 +630,476 @@
 			"adj": 0,
 			"damage": 0,
 			"calc": {
-				"value": 24,
-				"current": 24,
+				"value": 10,
+				"current": 10,
 				"points": 0
 			}
 		}
 	],
-	"total_points": 25,
+	"total_points": -11,
 	"advantages": [
 		{
 			"type": "advantage",
-			"id": "7fe2cc05-e2d4-44ac-8ff8-909f116d1427",
-			"name": "坏脾气",
-			"mental": true,
-			"base_points": -10,
-			"cr": 12,
-			"reference": "B124",
-			"calc": {
-				"points": -10
-			},
-			"categories": [
-				"劣势"
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "0ab8999b-9a81-42a2-ae1f-18498621f587",
-			"name": "战斗反射",
-			"mental": true,
-			"base_points": 15,
-			"reference": "B43",
-			"calc": {
-				"points": 15
-			},
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "advantage_prereq",
-						"has": false,
-						"name": {
-							"compare": "is",
-							"qualifier": "Enhanced Time Sense"
-						}
-					}
-				]
-			},
-			"features": [
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "starts_with",
-						"qualifier": "即时备战"
-					}
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"attribute": "dodge"
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"attribute": "parry"
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"attribute": "block"
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 2,
-					"attribute": "fright_check"
-				}
-			],
-			"notes": "你的所有主动防御(见防御)+1，即时备战技能+1，还有恐惧检定+2。你永远不会被突然出现的意外情况“惊呆”，并且在尝试清醒、试图从被突袭带来的惊讶中回过神，以及从心理震慑中恢复的IQ 检定中获得+6 的加值。你的队伍会在避免突袭的对抗中获得+1 奖励，如果你是队伍的领导者，则获得+2。",
-			"categories": [
-				"优势"
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "2ae55d4d-b74d-4994-991d-4c97aaefeefa",
-			"allow_half_levels": true,
-			"name": "增强移动（地面）",
+			"id": "cc4cf6ec-3b5b-466b-b6c6-53ed9d896f10",
+			"name": "伤害减免",
 			"physical": true,
 			"exotic": true,
 			"levels": "1",
-			"points_per_level": 20,
+			"points_per_level": 5,
 			"modifiers": [
 				{
 					"type": "modifier",
-					"id": "9f0772e2-576b-4204-95f9-f20c03511dfb",
+					"id": "a6d32348-7f64-4139-86b9-6b1f04cf47b7",
 					"disabled": true,
-					"name": "操纵性加值",
-					"reference": "B52",
+					"name": "剥离",
+					"reference": "B47",
 					"cost_type": "percentage",
-					"cost": 5,
-					"affects": "total",
-					"levels": 1
-				},
-				{
-					"type": "modifier",
-					"id": "aa151cb0-2a4d-4360-9b73-0b70790bc7df",
-					"disabled": true,
-					"name": "操纵性减值",
-					"reference": "B52",
-					"cost_type": "percentage",
-					"cost": -5,
-					"affects": "total",
-					"levels": 1
-				},
-				{
-					"type": "modifier",
-					"id": "66464607-d58c-4a7d-a156-e75e6c3b3a25",
-					"disabled": true,
-					"name": "牛顿力学",
-					"reference": "B52",
-					"cost_type": "percentage",
-					"cost": -50,
+					"cost": -80,
 					"affects": "total"
 				},
 				{
 					"type": "modifier",
-					"id": "8e3740d6-8e05-4044-9999-ff944dfa7287",
+					"id": "a0ffc26b-46b4-4255-8beb-7479047a466b",
 					"disabled": true,
-					"name": "依赖道路",
-					"reference": "B52",
+					"name": "吸收",
+					"reference": "B46",
 					"cost_type": "percentage",
-					"cost": -50,
+					"cost": 80,
+					"affects": "total",
+					"notes": "加强@特征@"
+				},
+				{
+					"type": "modifier",
+					"id": "12a9563f-86f8-48bb-b9d1-910a0ec2a68e",
+					"disabled": true,
+					"name": "吸收",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total",
+					"notes": "加强任何特征"
+				},
+				{
+					"type": "modifier",
+					"id": "fe42f6ec-c1c2-4ca7-85bd-ade1d8c1480c",
+					"disabled": true,
+					"name": "吸收",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": 80,
+					"affects": "total",
+					"notes": "只能治疗"
+				},
+				{
+					"type": "modifier",
+					"id": "e9e9731d-e8df-47a1-bff4-ecbf46c1c698",
+					"disabled": true,
+					"name": "无法穿着护甲",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": -40,
 					"affects": "total"
 				},
 				{
 					"type": "modifier",
-					"id": "6c8072eb-0992-4ffb-9488-9400596c7188",
+					"id": "75fa8dbc-556c-4ecb-9171-a2d4a287b7b4",
 					"disabled": true,
-					"name": "All-Out",
-					"reference": "P49",
+					"name": "定向",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total",
+					"notes": "@方向：后方，右，左，上或下@"
+				},
+				{
+					"type": "modifier",
+					"id": "420fa8a7-4ed6-4c83-b61f-61873f39774b",
+					"disabled": true,
+					"name": "定向",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "前方"
+				},
+				{
+					"type": "modifier",
+					"id": "ec5570df-a058-41e6-8c84-6441338f2673",
+					"disabled": true,
+					"name": "柔软",
+					"reference": "B47",
 					"cost_type": "percentage",
 					"cost": -20,
 					"affects": "total"
 				},
 				{
 					"type": "modifier",
-					"id": "49ee1f01-79a7-4977-a505-9a5da25ed6ce",
+					"id": "68ef4aba-ee59-4f99-9959-d2d1cb61ea19",
 					"disabled": true,
-					"name": "Cosmic",
-					"reference": "SU26",
+					"name": "硬化",
+					"reference": "B47",
 					"cost_type": "percentage",
-					"cost": 50,
+					"cost": 20,
 					"affects": "total",
-					"notes": "Instantaneous Acceleration"
+					"levels": 1
 				},
 				{
 					"type": "modifier",
-					"id": "fd4e7070-7358-4a6f-b6ac-8f0b5cb03c11",
+					"id": "7d270bb8-bdb8-4838-bbfd-9f0726e45175",
 					"disabled": true,
-					"name": "Cosmic",
-					"reference": "SU27",
+					"name": "有限伤害类型",
+					"reference": "B46",
 					"cost_type": "percentage",
-					"cost": 50,
+					"cost": -40,
 					"affects": "total",
-					"notes": "Complete Maneuverability"
-				}
-			],
-			"reference": "B52",
-			"calc": {
-				"points": 20
-			},
-			"notes": "将普通地面移动力乘以1+等级",
-			"categories": [
-				"优势"
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "fe39ce9f-b5c2-4152-8b7e-d8b826895c00",
-			"name": "蹄子",
-			"physical": true,
-			"base_points": 3,
-			"weapons": [
+					"notes": "@常见攻击形式@"
+				},
 				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"modifier_per_die": 1
-					},
-					"usage": "践踏",
-					"reach": "C,1",
-					"parry": "No",
-					"block": "No",
-					"calc": {
-						"level": 10,
-						"parry": "No",
-						"block": "No",
-						"damage": "2d+5 cr"
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "斗殴",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "空手技击",
-							"modifier": -2
-						}
-					]
+					"type": "modifier",
+					"id": "b56b9760-3a8f-40ca-82f4-671ea62f20e3",
+					"disabled": true,
+					"name": "有限伤害类型",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": -60,
+					"affects": "total",
+					"notes": "@偶见攻击形式@"
+				},
+				{
+					"type": "modifier",
+					"id": "a8557c8e-9a90-403b-8549-1f632e58143d",
+					"disabled": true,
+					"name": "有限伤害类型",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": -80,
+					"affects": "total",
+					"notes": "@稀有攻击形式@"
+				},
+				{
+					"type": "modifier",
+					"id": "feed157f-c952-46e1-bb07-5e6f8fa26904",
+					"disabled": true,
+					"name": "有限伤害类型",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "@非常常见攻击形式@"
+				},
+				{
+					"type": "modifier",
+					"id": "3f2c40d6-437a-4119-b3b1-b7946039e0a5",
+					"disabled": true,
+					"name": "反弹",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "27958d1b-77d5-451a-8646-4f7be527e8cc",
+					"disabled": true,
+					"name": "半剥离",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "a2323d5a-539a-44b5-9875-938b61272210",
+					"disabled": true,
+					"name": "力场护盾",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": 20,
+					"affects": "total"
 				}
 			],
-			"reference": "B42",
+			"reference": "B46",
 			"calc": {
-				"points": 3
+				"points": 5
 			},
 			"features": [
 				{
 					"type": "dr_bonus",
 					"amount": 1,
+					"per_level": true,
+					"location": "eye"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "skull"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "face"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "neck"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "torso"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "vitals"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "groin"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "arm"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "hand"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "leg"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
 					"location": "foot"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "tail"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "wing"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "fin"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "brain"
 				}
 			],
 			"categories": [
 				"优势",
-				"Animal"
+				"动物",
+				"机器人"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "6994d83e-32b8-4651-b52f-ea2981dc2d6d",
+			"name": "识别性嗅觉",
+			"physical": true,
+			"exotic": true,
+			"base_points": 15,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "f4a60172-fd9a-4ad5-b784-6803583bdd5a",
+					"disabled": true,
+					"name": "情绪感应",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "cbd532e6-716d-4200-9979-1c9b861b84b6",
+					"disabled": true,
+					"name": "Profiling",
+					"reference": "P47",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				}
+			],
+			"reference": "B49",
+			"calc": {
+				"points": 15
+			},
+			"categories": [
+				"优势"
 			]
 		},
 		{
 			"type": "advantage_container",
-			"id": "8f0ad293-5cf6-431a-8ff6-aaf57d44137d",
-			"name": "超特质：驯化动物",
+			"id": "38b43644-aff6-41e8-a4fd-c218ef193819",
+			"name": "超特质：四足生物",
+			"reference": "B263",
+			"calc": {
+				"points": -35
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"id": "5f9bc840-73f3-403f-a0ac-27617046e624",
+					"name": "额外腿部",
+					"physical": true,
+					"exotic": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "a9929e65-28ee-4124-b209-db0950f85feb",
+							"name": "4",
+							"reference": "B54",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "4d718d9a-d976-40e1-86ee-a22f87f6c78d",
+							"disabled": true,
+							"name": "@5 或 6@",
+							"reference": "B55",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "73dc89c0-1552-41d4-ad61-edffa1e03715",
+							"disabled": true,
+							"name": "@7+@",
+							"reference": "B55",
+							"cost_type": "points",
+							"cost": 15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "cf8b0c50-0ea8-4871-b547-def8ae0ebd43",
+							"disabled": true,
+							"name": "长",
+							"reference": "B55",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total",
+							"levels": 1
+						},
+						{
+							"type": "modifier",
+							"id": "d21657e4-711d-4395-b32e-efafdce58426",
+							"disabled": true,
+							"name": "不能踢击",
+							"reference": "B55",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "409bb767-d741-406d-8060-ca40040e9da1",
+							"disabled": true,
+							"name": "更加柔软",
+							"reference": "MATG27",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "7f937b51-ffbd-41aa-9a49-dda7013c9257",
+							"disabled": true,
+							"name": "Prehensile Feet",
+							"reference": "MATG28",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						}
+					],
+					"reference": "B54",
+					"calc": {
+						"points": 5
+					},
+					"categories": [
+						"优势"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "7dc0f80c-822a-49f9-9060-292451d34ea9",
+					"name": "非直立",
+					"physical": true,
+					"exotic": true,
+					"base_points": -10,
+					"reference": "B139",
+					"calc": {
+						"points": -10
+					},
+					"categories": [
+						"劣势"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "5ca6ae45-c715-48cf-b99d-32c1c74d23e5",
+					"name": "无操作肢",
+					"physical": true,
+					"base_points": -30,
+					"reference": "B145",
+					"calc": {
+						"points": -30
+					},
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 40
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 40
+						}
+					],
+					"categories": [
+						"劣势"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"id": "5c4269e8-dba8-4516-aaeb-974871751c65",
+			"name": "超特质：野生动物",
 			"reference": "B263",
 			"calc": {
 				"points": -30
@@ -878,7 +1108,22 @@
 			"children": [
 				{
 					"type": "advantage",
-					"id": "07cf91fa-d327-49db-8baf-661e9fb44ef3",
+					"id": "225f5168-0777-4394-b1e8-71560bb8a1c0",
+					"name": "兽性",
+					"mental": true,
+					"exotic": true,
+					"base_points": -10,
+					"reference": "B124",
+					"calc": {
+						"points": -10
+					},
+					"categories": [
+						"劣势"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "d1947767-f0fe-4e35-a694-c0b810b99507",
 					"name": "无法交谈",
 					"physical": true,
 					"base_points": -15,
@@ -906,7 +1151,7 @@
 				},
 				{
 					"type": "advantage",
-					"id": "8c4b8e0c-efb7-4728-9bc8-99986764dbd7",
+					"id": "9008d78e-ed72-4153-9864-0389281520ab",
 					"name": "思想僵化",
 					"mental": true,
 					"base_points": -5,
@@ -921,24 +1166,10 @@
 				},
 				{
 					"type": "advantage",
-					"id": "5e6a1f89-0af2-4df9-882d-121d81386d00",
-					"name": "社会污名（有价值财产）",
-					"social": true,
-					"base_points": -10,
-					"reference": "B156",
-					"calc": {
-						"points": -10
-					},
-					"notes": "$5000",
-					"categories": [
-						"劣势"
-					]
-				},
-				{
-					"type": "advantage",
-					"id": "9314aef4-dca1-4bea-8c3e-652940d17606",
+					"id": "430351d6-56d1-492b-acf3-6414db9531b6",
 					"name": "禁用特质 (固定IQ)",
-					"mental": true,
+					"physical": true,
+					"reference": "B263",
 					"calc": {
 						"points": 0
 					}
@@ -946,231 +1177,93 @@
 			]
 		},
 		{
-			"type": "advantage_container",
-			"id": "f5b84369-5e67-4450-90a8-f8731b253a3e",
-			"name": "超特质：四足生物",
-			"reference": "B263",
-			"calc": {
-				"points": -35
-			},
-			"open": true,
-			"children": [
-				{
-					"type": "advantage",
-					"id": "f656d967-221a-471c-8136-d443adbb7120",
-					"name": "额外腿部",
-					"physical": true,
-					"exotic": true,
-					"modifiers": [
-						{
-							"type": "modifier",
-							"id": "e4131f8f-a830-47d1-8231-d94dc0cba0af",
-							"name": "4",
-							"reference": "B54",
-							"cost_type": "points",
-							"cost": 5,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"id": "4ca3137a-fbd4-4ac7-bf4f-a343c841975a",
-							"disabled": true,
-							"name": "@5 或 6@",
-							"reference": "B55",
-							"cost_type": "points",
-							"cost": 10,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"id": "91f761dd-884a-47dd-9e73-5c040c1b7004",
-							"disabled": true,
-							"name": "@7+@",
-							"reference": "B55",
-							"cost_type": "points",
-							"cost": 15,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"id": "1941da9e-0ca4-4393-afd1-e8fc236917f5",
-							"disabled": true,
-							"name": "长",
-							"reference": "B55",
-							"cost_type": "percentage",
-							"cost": 100,
-							"affects": "total",
-							"levels": 1
-						},
-						{
-							"type": "modifier",
-							"id": "eb5ea958-f724-43e0-96c9-e6959cd5d341",
-							"disabled": true,
-							"name": "不能踢击",
-							"reference": "B55",
-							"cost_type": "percentage",
-							"cost": -50,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"id": "0f777c71-bc53-4b2e-99e7-249cad369e1d",
-							"disabled": true,
-							"name": "更加柔软",
-							"reference": "MATG27",
-							"cost_type": "percentage",
-							"cost": 50,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"id": "9d142303-f1f1-4c4d-9529-c4a50f0438ba",
-							"disabled": true,
-							"name": "Prehensile Feet",
-							"reference": "MATG28",
-							"cost_type": "percentage",
-							"cost": 20,
-							"affects": "total"
-						}
-					],
-					"reference": "B54",
-					"calc": {
-						"points": 5
-					},
-					"categories": [
-						"优势"
-					]
-				},
-				{
-					"type": "advantage",
-					"id": "4c5bf968-c761-4903-ab8d-dc7fed972223",
-					"name": "非直立",
-					"physical": true,
-					"exotic": true,
-					"base_points": -10,
-					"reference": "B139",
-					"calc": {
-						"points": -10
-					},
-					"categories": [
-						"劣势"
-					]
-				},
-				{
-					"type": "advantage",
-					"id": "48ec02b9-d64e-44bf-a212-310215faccd4",
-					"name": "无操作肢",
-					"physical": true,
-					"base_points": -30,
-					"reference": "B145",
-					"calc": {
-						"points": -30
-					},
-					"features": [
-						{
-							"type": "cost_reduction",
-							"attribute": "st",
-							"percentage": 40
-						},
-						{
-							"type": "cost_reduction",
-							"attribute": "dx",
-							"percentage": 40
-						}
-					],
-					"categories": [
-						"劣势"
-					]
-				}
-			]
-		},
-		{
 			"type": "advantage",
-			"id": "1537a247-5414-4be7-bb1d-c1d362d8b5c7",
-			"name": "Peripheral 视觉",
+			"id": "d44046b4-2811-4f34-bcc6-7caed6bb9781",
+			"name": "夜视",
 			"physical": true,
-			"base_points": 15,
-			"modifiers": [
-				{
-					"type": "modifier",
-					"id": "44cfe4c0-d9bb-44d9-afa9-c85dafd2e559",
-					"disabled": true,
-					"name": "Easy to Hit",
-					"reference": "B75",
-					"cost_type": "percentage",
-					"cost": -20,
-					"affects": "total",
-					"notes": "Others can target your eyes at only -6 to hit"
-				}
-			],
-			"reference": "B74",
+			"levels": "2",
+			"points_per_level": 1,
+			"reference": "B71",
 			"calc": {
-				"points": 15
+				"points": 2
 			},
 			"categories": [
 				"优势",
-				"Animal",
-				"Mech"
+				"动物"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "9ea11484-183a-4958-9ad4-c399ee6aecf9",
-			"name": "弱化咬力",
+			"id": "1c2e3667-6461-4cba-8433-553fa4661379",
+			"name": "利齿",
 			"physical": true,
 			"exotic": true,
-			"base_points": -2,
+			"base_points": 1,
 			"weapons": [
 				{
 					"type": "melee_weapon",
 					"damage": {
-						"type": "cr",
+						"type": "cut",
 						"st": "thr",
-						"base": "-1",
-						"modifier_per_die": -2
+						"base": "-1"
 					},
 					"usage": "啮咬",
 					"reach": "C",
 					"parry": "No",
 					"block": "No",
 					"calc": {
-						"level": 12,
+						"level": 14,
 						"parry": "No",
 						"block": "No",
-						"damage": "2d-2 cr"
+						"damage": "1d-2 cut"
 					},
 					"defaults": [
 						{
-							"type": "dx"
-						},
-						{
 							"type": "skill",
 							"name": "斗殴"
+						},
+						{
+							"type": "dx"
 						}
 					]
 				}
 			],
-			"reference": "B161",
+			"reference": "B91",
 			"calc": {
-				"points": -2
+				"points": 1
 			},
 			"categories": [
-				"Animal",
-				"劣势"
+				"动物",
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "4c53615e-42fa-4c75-beaa-77163d283397",
+			"name": "超温耐受",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": 1,
+			"reference": "B93",
+			"calc": {
+				"points": 1
+			},
+			"categories": [
+				"优势"
 			]
 		}
 	],
 	"skills": [
 		{
 			"type": "skill",
-			"id": "41c1b158-2f05-4fd1-91b9-cb2505688dd7",
+			"id": "4c76ceb1-75e9-4005-9df7-a8056bc2c22a",
 			"name": "斗殴",
 			"reference": "B182",
 			"difficulty": "dx/e",
-			"points": 8,
+			"points": 4,
 			"calc": {
-				"level": 12,
-				"rsl": "DX+3"
+				"level": 14,
+				"rsl": "DX+2"
 			},
 			"features": [
 				{
@@ -1195,54 +1288,58 @@
 		},
 		{
 			"type": "skill",
-			"id": "4682be7b-4068-4183-8012-d1eea18ebd03",
-			"name": "Mount",
-			"reference": "B210",
-			"difficulty": "dx/a",
-			"points": 16,
+			"id": "ca132b2c-eb7a-4fb4-ada8-28b5c2ea2172",
+			"name": "追踪",
+			"reference": "B226",
+			"difficulty": "per/a",
+			"points": 2,
 			"defaulted_from": {
-				"type": "dx",
+				"type": "per",
 				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 13,
-				"rsl": "DX+4"
+				"level": 14,
+				"rsl": "Per+0"
 			},
 			"defaults": [
 				{
-					"type": "dx",
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "博物学",
 					"modifier": -5
 				}
 			],
 			"categories": [
-				"Animal",
-				"运动"
+				"户外/探索"
 			]
 		}
 	],
 	"notes": [
 		{
 			"type": "note",
-			"id": "f52ccbea-b6a7-48e5-8635-cafcc58f2fe3",
-			"text": "3 hexes long.\n\nThese animals were domesticated in Europe and Asia before recorded history. They were introduced to the Americas in the late 15th and 16th centuries.",
-			"reference": "B459"
+			"id": "46f10114-9aab-4058-81f8-05af3fea9228",
+			"text": "这些野生的食肉动物采取集团方式狩猎。它们可以被多多少少驯化一点，但绝不会像狗一样。",
+			"reference": "B458"
 		}
 	],
 	"calc": {
-		"swing": "4d+2",
-		"thrust": "2d+1",
-		"basic_lift": "115 lb",
+		"swing": "1d",
+		"thrust": "1d-2",
+		"basic_lift": "20 lb",
 		"lifting_st_bonus": 0,
 		"striking_st_bonus": 0,
 		"throwing_st_bonus": 0,
 		"move": [
+			9,
 			7,
 			5,
-			4,
-			2,
+			3,
 			1
 		],
 		"dodge": [
@@ -1252,8 +1349,8 @@
 			6,
 			5
 		],
-		"dodge_bonus": 1,
-		"block_bonus": 1,
-		"parry_bonus": 1
+		"dodge_bonus": 0,
+		"block_bonus": 0,
+		"parry_bonus": 0
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"type": "character",
 	"version": 2,
-	"id": "003ea117-8497-4b3f-8f6b-c4f26563af08",
+	"id": "68da4776-46a2-4fa3-8f9b-1ba9a8f1dadd",
 	"settings": {
 		"default_length_units": "ft_in",
 		"default_weight_units": "lb",
@@ -332,8 +332,8 @@
 			}
 		],
 		"hit_locations": {
-			"id": "avian",
-			"name": "Avian",
+			"id": "quadruped",
+			"name": "四足生物",
 			"roll": "3d",
 			"locations": [
 				{
@@ -397,13 +397,13 @@
 					}
 				},
 				{
-					"id": "wing",
-					"choice_name": "Wing",
-					"table_name": "Wing",
+					"id": "leg",
+					"choice_name": "腿",
+					"table_name": "前腿",
 					"slots": 2,
 					"hit_penalty": -2,
 					"dr_bonus": 0,
-					"description": "Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ½ HP from one blow) cripples the limb. Damage beyond that threshold is lost. A flyer with a crippled wing cannot fly.",
+					"description": "肢体。贯通+、贯通++、刺穿伤害乘数改为1，任何重伤(单次失去超过1/2 HP)将致残肢体，但超过一半HP的伤害值将丢失。",
 					"calc": {
 						"roll_range": "7-8",
 						"dr": {
@@ -444,7 +444,7 @@
 				{
 					"id": "leg",
 					"choice_name": "腿",
-					"table_name": "腿",
+					"table_name": "后腿",
 					"slots": 2,
 					"hit_penalty": -2,
 					"dr_bonus": 0,
@@ -467,7 +467,7 @@
 					"calc": {
 						"roll_range": "15-16",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -504,28 +504,28 @@
 			]
 		}
 	},
-	"created_date": "May 16, 2020, 12:00 AM",
-	"modified_date": "Jun 20, 2020, 1:44 PM",
+	"created_date": "Feb 16, 2014, 12:00 AM",
+	"modified_date": "Jun 20, 2020, 1:49 PM",
 	"profile": {
-		"name": "Large Falcon",
-		"weight": "5 lb",
-		"SM": -4
+		"name": "重型战马",
+		"weight": "1900 lb",
+		"SM": 1
 	},
 	"attributes": [
 		{
 			"attr_id": "st",
-			"adj": -7,
+			"adj": 14,
 			"calc": {
-				"value": 3,
-				"points": -42
+				"value": 24,
+				"points": 70
 			}
 		},
 		{
 			"attr_id": "dx",
-			"adj": 4,
+			"adj": -1,
 			"calc": {
-				"value": 14,
-				"points": 48
+				"value": 9,
+				"points": -12
 			}
 		},
 		{
@@ -538,25 +538,25 @@
 		},
 		{
 			"attr_id": "ht",
-			"adj": 0,
+			"adj": 2,
 			"calc": {
-				"value": 10,
-				"points": 0
+				"value": 12,
+				"points": 20
 			}
 		},
 		{
 			"attr_id": "will",
-			"adj": 7,
+			"adj": 8,
 			"calc": {
-				"value": 10,
-				"points": 35
+				"value": 11,
+				"points": 40
 			}
 		},
 		{
 			"attr_id": "fright_check",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 13,
 				"points": 0
 			}
 		},
@@ -572,7 +572,7 @@
 			"attr_id": "vision",
 			"adj": 0,
 			"calc": {
-				"value": 15,
+				"value": 12,
 				"points": 0
 			}
 		},
@@ -604,16 +604,16 @@
 			"attr_id": "basic_speed",
 			"adj": 0,
 			"calc": {
-				"value": 6,
+				"value": 5.25,
 				"points": 0
 			}
 		},
 		{
 			"attr_id": "basic_move",
-			"adj": -4,
+			"adj": 2,
 			"calc": {
-				"value": 2,
-				"points": -20
+				"value": 7,
+				"points": 10
 			}
 		},
 		{
@@ -621,8 +621,8 @@
 			"adj": 0,
 			"damage": 0,
 			"calc": {
-				"value": 10,
-				"current": 10,
+				"value": 12,
+				"current": 12,
 				"points": 0
 			}
 		},
@@ -631,59 +631,206 @@
 			"adj": 0,
 			"damage": 0,
 			"calc": {
-				"value": 3,
-				"current": 3,
+				"value": 24,
+				"current": 24,
 				"points": 0
 			}
 		}
 	],
-	"total_points": -96,
+	"total_points": 25,
 	"advantages": [
 		{
 			"type": "advantage",
-			"id": "ae287c4b-fb0d-4157-a3cf-c7350bace574",
-			"name": "Acute 视觉",
-			"physical": true,
-			"levels": "3",
-			"points_per_level": 2,
-			"reference": "B35",
+			"id": "7fe2cc05-e2d4-44ac-8ff8-909f116d1427",
+			"name": "坏脾气",
+			"mental": true,
+			"base_points": -10,
+			"cr": 12,
+			"reference": "B124",
 			"calc": {
-				"points": 6
+				"points": -10
+			},
+			"categories": [
+				"劣势"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "0ab8999b-9a81-42a2-ae1f-18498621f587",
+			"name": "战斗反射",
+			"mental": true,
+			"base_points": 15,
+			"reference": "B43",
+			"calc": {
+				"points": 15
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Enhanced Time Sense"
+						}
+					}
+				]
 			},
 			"features": [
 				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "starts_with",
+						"qualifier": "即时备战"
+					}
+				},
+				{
 					"type": "attribute_bonus",
 					"amount": 1,
-					"per_level": true,
-					"attribute": "vision"
+					"attribute": "dodge"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "parry"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "block"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 2,
+					"attribute": "fright_check"
 				}
 			],
+			"notes": "你的所有主动防御(见防御)+1，即时备战技能+1，还有恐惧检定+2。你永远不会被突然出现的意外情况“惊呆”，并且在尝试清醒、试图从被突袭带来的惊讶中回过神，以及从心理震慑中恢复的IQ 检定中获得+6 的加值。你的队伍会在避免突袭的对抗中获得+1 奖励，如果你是队伍的领导者，则获得+2。",
 			"categories": [
 				"优势"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "8680b7ae-bfc4-4c2f-aef9-29724ec09477",
-			"name": "Claws, Sharp (Feet)",
+			"id": "2ae55d4d-b74d-4994-991d-4c97aaefeefa",
+			"allow_half_levels": true,
+			"name": "增强移动（地面）",
 			"physical": true,
-			"base_points": 5,
+			"exotic": true,
+			"levels": "1",
+			"points_per_level": 20,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "9f0772e2-576b-4204-95f9-f20c03511dfb",
+					"disabled": true,
+					"name": "操纵性加值",
+					"reference": "B52",
+					"cost_type": "percentage",
+					"cost": 5,
+					"affects": "total",
+					"levels": 1
+				},
+				{
+					"type": "modifier",
+					"id": "aa151cb0-2a4d-4360-9b73-0b70790bc7df",
+					"disabled": true,
+					"name": "操纵性减值",
+					"reference": "B52",
+					"cost_type": "percentage",
+					"cost": -5,
+					"affects": "total",
+					"levels": 1
+				},
+				{
+					"type": "modifier",
+					"id": "66464607-d58c-4a7d-a156-e75e6c3b3a25",
+					"disabled": true,
+					"name": "牛顿力学",
+					"reference": "B52",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "8e3740d6-8e05-4044-9999-ff944dfa7287",
+					"disabled": true,
+					"name": "依赖道路",
+					"reference": "B52",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "6c8072eb-0992-4ffb-9488-9400596c7188",
+					"disabled": true,
+					"name": "All-Out",
+					"reference": "P49",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "49ee1f01-79a7-4977-a505-9a5da25ed6ce",
+					"disabled": true,
+					"name": "Cosmic",
+					"reference": "SU26",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total",
+					"notes": "Instantaneous Acceleration"
+				},
+				{
+					"type": "modifier",
+					"id": "fd4e7070-7358-4a6f-b6ac-8f0b5cb03c11",
+					"disabled": true,
+					"name": "Cosmic",
+					"reference": "SU27",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total",
+					"notes": "Complete Maneuverability"
+				}
+			],
+			"reference": "B52",
+			"calc": {
+				"points": 20
+			},
+			"notes": "将普通地面移动力乘以1+等级",
+			"categories": [
+				"优势"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "fe39ce9f-b5c2-4152-8b7e-d8b826895c00",
+			"name": "蹄子",
+			"physical": true,
+			"base_points": 3,
 			"weapons": [
 				{
 					"type": "melee_weapon",
 					"damage": {
-						"type": "cut",
-						"st": "thr"
+						"type": "cr",
+						"st": "thr",
+						"modifier_per_die": 1
 					},
-					"usage": "踢踹",
+					"usage": "践踏",
 					"reach": "C,1",
 					"parry": "No",
 					"block": "No",
 					"calc": {
-						"level": 14,
+						"level": 10,
 						"parry": "No",
 						"block": "No",
-						"damage": "1d-4 cut"
+						"damage": "2d+5 cr"
 					},
 					"defaults": [
 						{
@@ -705,291 +852,24 @@
 			],
 			"reference": "B42",
 			"calc": {
-				"points": 5
+				"points": 3
 			},
-			"categories": [
-				"优势"
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "f87dd2e1-e49b-4bd0-8daa-3e56e78ab1f2",
-			"allow_half_levels": true,
-			"name": "增强移动（空中）",
-			"physical": true,
-			"exotic": true,
-			"levels": "1",
-			"points_per_level": 20,
-			"modifiers": [
+			"features": [
 				{
-					"type": "modifier",
-					"id": "6d397bd8-ef2d-4cb2-9011-3b6c99f9006a",
-					"disabled": true,
-					"name": "操纵性加值",
-					"reference": "B52",
-					"cost_type": "percentage",
-					"cost": 5,
-					"affects": "total",
-					"levels": 1
-				},
-				{
-					"type": "modifier",
-					"id": "6b168bc8-6058-41e7-8f2b-b279c21d09f1",
-					"disabled": true,
-					"name": "操纵性减值",
-					"reference": "B52",
-					"cost_type": "percentage",
-					"cost": -5,
-					"affects": "total",
-					"levels": 1
-				},
-				{
-					"type": "modifier",
-					"id": "7262787b-aa86-4d30-9241-f53784e31735",
-					"disabled": true,
-					"name": "牛顿力学",
-					"reference": "B52",
-					"cost_type": "percentage",
-					"cost": -50,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "91ed311b-c3e7-44c5-b980-fcef8a1b6df8",
-					"disabled": true,
-					"name": "依赖道路",
-					"reference": "B52",
-					"cost_type": "percentage",
-					"cost": -50,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "386d725a-81e4-4093-bf0d-6fe0febcd97f",
-					"disabled": true,
-					"name": "All-Out",
-					"reference": "P49",
-					"cost_type": "percentage",
-					"cost": -20,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "574399ff-85cc-46a8-95e5-28cc111c7f63",
-					"disabled": true,
-					"name": "Cosmic",
-					"reference": "SU26",
-					"cost_type": "percentage",
-					"cost": 50,
-					"affects": "total",
-					"notes": "Instantaneous Acceleration"
-				},
-				{
-					"type": "modifier",
-					"id": "8d9dead2-f0ba-46c7-8709-875f561eeb9e",
-					"disabled": true,
-					"name": "Cosmic",
-					"reference": "SU27",
-					"cost_type": "percentage",
-					"cost": 50,
-					"affects": "total",
-					"notes": "Complete Maneuverability"
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "foot"
 				}
 			],
-			"reference": "B52",
-			"calc": {
-				"points": 20
-			},
-			"notes": "将普通空中移动力乘以1+等级",
 			"categories": [
-				"优势"
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "a75052cf-2306-46ba-b244-876db6a170fa",
-			"name": "Flight",
-			"physical": true,
-			"exotic": true,
-			"base_points": 40,
-			"modifiers": [
-				{
-					"type": "modifier",
-					"id": "f580e8e3-7451-4ac8-80f0-e6bba27f2217",
-					"disabled": true,
-					"name": "牛顿力学 Space Flight",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": 25,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "c1ae0d0b-6679-4f77-bed3-685c14d1e99c",
-					"disabled": true,
-					"name": "Space Flight",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": 50,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "17def85e-889a-4a82-863b-eefa8a284ced",
-					"disabled": true,
-					"name": "Cannot Hover",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": -15,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "57e1f73a-8c91-441e-8079-8b32499c204f",
-					"disabled": true,
-					"name": "Controlled Gliding",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": -45,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "4225aa44-9ac4-4f47-bca0-29241ad6b97a",
-					"disabled": true,
-					"name": "Gliding",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": -50,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "7496f99d-6cc0-47fa-ae81-4e7cbd06898e",
-					"disabled": true,
-					"name": "Lighter Than Air",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": -10,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "ce1e8275-e498-4cee-aadc-317e38fe561a",
-					"disabled": true,
-					"name": "Low Ceiling",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": -10,
-					"affects": "total",
-					"notes": "30'"
-				},
-				{
-					"type": "modifier",
-					"id": "7ec7f9cc-dd9c-4a4e-9772-713e98b6595e",
-					"disabled": true,
-					"name": "Low Ceiling",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": -20,
-					"affects": "total",
-					"notes": "10'"
-				},
-				{
-					"type": "modifier",
-					"id": "756a3b77-2c11-4b80-92b7-c50804c65e04",
-					"disabled": true,
-					"name": "Low Ceiling",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": -25,
-					"affects": "total",
-					"notes": "5'"
-				},
-				{
-					"type": "modifier",
-					"id": "d7881cde-0500-4950-b510-ede63a8a13c3",
-					"disabled": true,
-					"name": "Small Wings",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": -10,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "5482b923-8449-449c-8e9d-a06d0f3e72d3",
-					"disabled": true,
-					"name": "Space Flight Only",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": -75,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "026decb5-2b48-44e4-b69d-61b7cbf16875",
-					"name": "Winged",
-					"reference": "B56",
-					"cost_type": "percentage",
-					"cost": -25,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "181848d9-0aeb-4bec-98f8-03c85ea58599",
-					"disabled": true,
-					"name": "Planetary",
-					"reference": "P50",
-					"cost_type": "percentage",
-					"cost": -5,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "654e3a54-df35-42b5-9845-47d729e59441",
-					"disabled": true,
-					"name": "Requires Surface",
-					"reference": "P50",
-					"cost_type": "percentage",
-					"cost": -20,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "5a1122cd-864b-4d2d-8db1-33b07e952fca",
-					"disabled": true,
-					"name": "Slow",
-					"reference": "PSI14",
-					"cost_type": "percentage",
-					"cost": -25,
-					"affects": "total",
-					"notes": "基本速度"
-				},
-				{
-					"type": "modifier",
-					"id": "bc18dbcf-2144-449d-9eea-aeae8d05baaa",
-					"disabled": true,
-					"name": "Slow, Move 1",
-					"reference": "PSI14",
-					"cost_type": "percentage",
-					"cost": -45,
-					"affects": "total"
-				}
-			],
-			"reference": "B56",
-			"calc": {
-				"points": 30
-			},
-			"notes": "Air Move is 基本速度 x 2 (drop all fractions)",
-			"categories": [
-				"优势"
+				"优势",
+				"动物"
 			]
 		},
 		{
 			"type": "advantage_container",
-			"id": "db956401-ffb5-437e-84be-bc5a5b4466e0",
-			"name": "超特质：野生动物",
+			"id": "8f0ad293-5cf6-431a-8ff6-aaf57d44137d",
+			"name": "超特质：驯化动物",
 			"reference": "B263",
 			"calc": {
 				"points": -30
@@ -998,22 +878,7 @@
 			"children": [
 				{
 					"type": "advantage",
-					"id": "2a76a3e7-f723-4293-b7e5-6e1f3c361c46",
-					"name": "兽性",
-					"mental": true,
-					"exotic": true,
-					"base_points": -10,
-					"reference": "B124",
-					"calc": {
-						"points": -10
-					},
-					"categories": [
-						"劣势"
-					]
-				},
-				{
-					"type": "advantage",
-					"id": "e1069a77-5500-4c81-8a8f-056454207abd",
+					"id": "07cf91fa-d327-49db-8baf-661e9fb44ef3",
 					"name": "无法交谈",
 					"physical": true,
 					"base_points": -15,
@@ -1041,7 +906,7 @@
 				},
 				{
 					"type": "advantage",
-					"id": "5ec77340-7cc7-4c43-b209-a05e0f0b03f1",
+					"id": "8c4b8e0c-efb7-4728-9bc8-99986764dbd7",
 					"name": "思想僵化",
 					"mental": true,
 					"base_points": -5,
@@ -1056,10 +921,24 @@
 				},
 				{
 					"type": "advantage",
-					"id": "320c898a-7213-43e1-9eb0-da934533df54",
+					"id": "5e6a1f89-0af2-4df9-882d-121d81386d00",
+					"name": "社会污名（有价值财产）",
+					"social": true,
+					"base_points": -10,
+					"reference": "B156",
+					"calc": {
+						"points": -10
+					},
+					"notes": "$5000",
+					"categories": [
+						"劣势"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "9314aef4-dca1-4bea-8c3e-652940d17606",
 					"name": "禁用特质 (固定IQ)",
-					"physical": true,
-					"reference": "B263",
+					"mental": true,
 					"calc": {
 						"points": 0
 					}
@@ -1067,55 +946,198 @@
 			]
 		},
 		{
-			"type": "advantage",
-			"id": "3ba781e0-a3ad-46fd-a3b8-8d62b20af3cb",
-			"name": "无操作肢",
-			"physical": true,
-			"base_points": -30,
-			"reference": "B145",
+			"type": "advantage_container",
+			"id": "f5b84369-5e67-4450-90a8-f8731b253a3e",
+			"name": "超特质：四足生物",
+			"reference": "B263",
 			"calc": {
-				"points": -30
+				"points": -35
 			},
-			"features": [
+			"open": true,
+			"children": [
 				{
-					"type": "cost_reduction",
-					"attribute": "st",
-					"percentage": 40
+					"type": "advantage",
+					"id": "f656d967-221a-471c-8136-d443adbb7120",
+					"name": "额外腿部",
+					"physical": true,
+					"exotic": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "e4131f8f-a830-47d1-8231-d94dc0cba0af",
+							"name": "4",
+							"reference": "B54",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "4ca3137a-fbd4-4ac7-bf4f-a343c841975a",
+							"disabled": true,
+							"name": "@5 或 6@",
+							"reference": "B55",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "91f761dd-884a-47dd-9e73-5c040c1b7004",
+							"disabled": true,
+							"name": "@7+@",
+							"reference": "B55",
+							"cost_type": "points",
+							"cost": 15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "1941da9e-0ca4-4393-afd1-e8fc236917f5",
+							"disabled": true,
+							"name": "长",
+							"reference": "B55",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total",
+							"levels": 1
+						},
+						{
+							"type": "modifier",
+							"id": "eb5ea958-f724-43e0-96c9-e6959cd5d341",
+							"disabled": true,
+							"name": "不能踢击",
+							"reference": "B55",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "0f777c71-bc53-4b2e-99e7-249cad369e1d",
+							"disabled": true,
+							"name": "更加柔软",
+							"reference": "MATG27",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "9d142303-f1f1-4c4d-9529-c4a50f0438ba",
+							"disabled": true,
+							"name": "Prehensile Feet",
+							"reference": "MATG28",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						}
+					],
+					"reference": "B54",
+					"calc": {
+						"points": 5
+					},
+					"categories": [
+						"优势"
+					]
 				},
 				{
-					"type": "cost_reduction",
-					"attribute": "dx",
-					"percentage": 40
+					"type": "advantage",
+					"id": "4c5bf968-c761-4903-ab8d-dc7fed972223",
+					"name": "非直立",
+					"physical": true,
+					"exotic": true,
+					"base_points": -10,
+					"reference": "B139",
+					"calc": {
+						"points": -10
+					},
+					"categories": [
+						"劣势"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "48ec02b9-d64e-44bf-a212-310215faccd4",
+					"name": "无操作肢",
+					"physical": true,
+					"base_points": -30,
+					"reference": "B145",
+					"calc": {
+						"points": -30
+					},
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 40
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 40
+						}
+					],
+					"categories": [
+						"劣势"
+					]
 				}
-			],
-			"categories": [
-				"劣势"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "029cd591-1a06-42c4-8e0e-f161293ba1af",
-			"name": "利齿 Beak",
+			"id": "1537a247-5414-4be7-bb1d-c1d362d8b5c7",
+			"name": "广角视觉",
+			"physical": true,
+			"base_points": 15,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "44cfe4c0-d9bb-44d9-afa9-c85dafd2e559",
+					"disabled": true,
+					"name": "易于命中",
+					"reference": "B75",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "其他人攻击你的眼睛仅受到-6减值"
+				}
+			],
+			"reference": "B74",
+			"calc": {
+				"points": 15
+			},
+			"categories": [
+				"优势",
+				"动物",
+				"机器人"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "9ea11484-183a-4958-9ad4-c399ee6aecf9",
+			"name": "弱化咬力",
 			"physical": true,
 			"exotic": true,
-			"base_points": 1,
+			"base_points": -2,
 			"weapons": [
 				{
 					"type": "melee_weapon",
 					"damage": {
-						"type": "pi+",
+						"type": "cr",
 						"st": "thr",
-						"base": "-1"
+						"base": "-1",
+						"modifier_per_die": -2
 					},
-					"usage": "Peck",
+					"usage": "啮咬",
 					"reach": "C",
 					"parry": "No",
 					"block": "No",
 					"calc": {
-						"level": 16,
+						"level": 12,
 						"parry": "No",
 						"block": "No",
-						"damage": "1d-5 pi+"
+						"damage": "2d-2 cr"
 					},
 					"defaults": [
 						{
@@ -1128,26 +1150,27 @@
 					]
 				}
 			],
-			"reference": "B91",
+			"reference": "B161",
 			"calc": {
-				"points": 1
+				"points": -2
 			},
 			"categories": [
-				"Perk"
+				"动物",
+				"劣势"
 			]
 		}
 	],
 	"skills": [
 		{
 			"type": "skill",
-			"id": "174fc035-1600-4ba1-8d32-51ea8e73c235",
+			"id": "41c1b158-2f05-4fd1-91b9-cb2505688dd7",
 			"name": "斗殴",
 			"reference": "B182",
 			"difficulty": "dx/e",
-			"points": 4,
+			"points": 8,
 			"calc": {
-				"level": 16,
-				"rsl": "DX+2"
+				"level": 12,
+				"rsl": "DX+3"
 			},
 			"features": [
 				{
@@ -1169,28 +1192,57 @@
 				"战斗/武器",
 				"近战战斗"
 			]
+		},
+		{
+			"type": "skill",
+			"id": "4682be7b-4068-4183-8012-d1eea18ebd03",
+			"name": "坐骑",
+			"reference": "B210",
+			"difficulty": "dx/a",
+			"points": 16,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "DX+4"
+			},
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"动物",
+				"运动"
+			]
 		}
 	],
 	"notes": [
 		{
 			"type": "note",
-			"id": "be37024b-5661-45dc-a311-e1e8a43a26d0",
-			"text": "These birds of prey are commonly used for sport hunting. A trained falcon – or one disturbed by a stranger – might attack a human. A diving falcon can reach Move 70!",
-			"reference": "B457"
+			"id": "f52ccbea-b6a7-48e5-8635-cafcc58f2fe3",
+			"text": "3格长。\n\n这些动物远在有记录的历史之前在欧洲和亚洲受到驯养，并在15世纪末到16世纪传入美洲。",
+			"reference": "B459"
 		}
 	],
 	"calc": {
-		"swing": "1d-4",
-		"thrust": "1d-5",
-		"basic_lift": "1.8 lb",
+		"swing": "4d+2",
+		"thrust": "2d+1",
+		"basic_lift": "115 lb",
 		"lifting_st_bonus": 0,
 		"striking_st_bonus": 0,
 		"throwing_st_bonus": 0,
 		"move": [
+			7,
+			5,
+			4,
 			2,
-			1,
-			1,
-			1,
 			1
 		],
 		"dodge": [
@@ -1200,8 +1252,8 @@
 			6,
 			5
 		],
-		"dodge_bonus": 0,
-		"block_bonus": 0,
-		"parry_bonus": 0
+		"dodge_bonus": 1,
+		"block_bonus": 1,
+		"parry_bonus": 1
 	}
 }

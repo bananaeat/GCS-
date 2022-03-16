@@ -1,7 +1,7 @@
 {
 	"type": "character",
 	"version": 2,
-	"id": "d499a475-6bfa-4b19-b123-7e6a6558bbbc",
+	"id": "94ce8d0e-9a68-4a59-af2c-a51733205b79",
 	"settings": {
 		"default_length_units": "ft_in",
 		"default_weight_units": "lb",
@@ -332,8 +332,8 @@
 			}
 		],
 		"hit_locations": {
-			"id": "humanoid",
-			"name": "Humanoid",
+			"id": "quadruped",
+			"name": "四足生物",
 			"roll": "3d",
 			"locations": [
 				{
@@ -382,30 +382,30 @@
 					}
 				},
 				{
-					"id": "leg",
-					"choice_name": "腿",
-					"table_name": "Right Leg",
-					"slots": 2,
-					"hit_penalty": -2,
+					"id": "neck",
+					"choice_name": "脖子",
+					"table_name": "脖子",
+					"slots": 1,
+					"hit_penalty": -5,
 					"dr_bonus": 0,
-					"description": "肢体。贯通+、贯通++、刺穿伤害乘数改为1，任何重伤(单次失去超过1/2 HP)将致残肢体，但超过一半HP的伤害值将丢失。",
+					"description": "颈、喉。钝击和腐蚀伤害的伤害乘数改为×1.5，切割伤害乘数改为×2。GM 可以认为被切割伤害击中脖子杀死的人死于斩首！",
 					"calc": {
-						"roll_range": "6-7",
+						"roll_range": "6",
 						"dr": {
 							"all": 1
 						}
 					}
 				},
 				{
-					"id": "arm",
-					"choice_name": "Arm",
-					"table_name": "Right Arm",
-					"slots": 1,
+					"id": "leg",
+					"choice_name": "腿",
+					"table_name": "前腿",
+					"slots": 2,
 					"hit_penalty": -2,
 					"dr_bonus": 0,
-					"description": "Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ½ HP from one blow) cripples the limb. Damage beyond that threshold is lost. If holding a shield, double the penalty to hit: -4 for shield arm instead of -2.",
+					"description": "肢体。贯通+、贯通++、刺穿伤害乘数改为1，任何重伤(单次失去超过1/2 HP)将致残肢体，但超过一半HP的伤害值将丢失。",
 					"calc": {
-						"roll_range": "8",
+						"roll_range": "7-8",
 						"dr": {
 							"all": 1
 						}
@@ -415,12 +415,12 @@
 					"id": "torso",
 					"choice_name": "躯干",
 					"table_name": "躯干",
-					"slots": 2,
+					"slots": 3,
 					"hit_penalty": 0,
 					"dr_bonus": 0,
 					"description": "",
 					"calc": {
-						"roll_range": "9-10",
+						"roll_range": "9-11",
 						"dr": {
 							"all": 1
 						}
@@ -435,21 +435,6 @@
 					"dr_bonus": 0,
 					"description": "失败值仅为1的攻击视为击中躯干。对男性类人生物此部位的钝击攻击造成双倍休克，抵抗击倒的HT 检定-5。其他情况视为击中躯干。",
 					"calc": {
-						"roll_range": "11",
-						"dr": {
-							"all": 1
-						}
-					}
-				},
-				{
-					"id": "arm",
-					"choice_name": "Arm",
-					"table_name": "Left Arm",
-					"slots": 1,
-					"hit_penalty": -2,
-					"dr_bonus": 0,
-					"description": "Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ½ HP from one blow) cripples the limb. Damage beyond that threshold is lost. If holding a shield, double the penalty to hit: -4 for shield arm instead of -2.",
-					"calc": {
 						"roll_range": "12",
 						"dr": {
 							"all": 1
@@ -459,7 +444,7 @@
 				{
 					"id": "leg",
 					"choice_name": "腿",
-					"table_name": "Left Leg",
+					"table_name": "后腿",
 					"slots": 2,
 					"hit_penalty": -2,
 					"dr_bonus": 0,
@@ -472,43 +457,28 @@
 					}
 				},
 				{
-					"id": "hand",
-					"choice_name": "Hand",
-					"table_name": "Hand",
-					"slots": 1,
-					"hit_penalty": -4,
-					"dr_bonus": 0,
-					"description": "If holding a shield, double the penalty to hit: -8 for shield hand instead of -4. 肢体。贯通+、贯通++、刺穿伤害乘数改为1，任何重伤(单次失去超过⅓HP)将致残肢体，但超过⅓HP的伤害值将丢失。",
-					"calc": {
-						"roll_range": "15",
-						"dr": {
-							"all": 1
-						}
-					}
-				},
-				{
 					"id": "foot",
 					"choice_name": "脚",
 					"table_name": "脚",
-					"slots": 1,
+					"slots": 2,
 					"hit_penalty": -4,
 					"dr_bonus": 0,
 					"description": "肢体。贯通+、贯通++、刺穿伤害乘数改为1，任何重伤(单次失去超过⅓HP)将致残肢体，但超过⅓HP的伤害值将丢失。",
 					"calc": {
-						"roll_range": "16",
+						"roll_range": "15-16",
 						"dr": {
 							"all": 1
 						}
 					}
 				},
 				{
-					"id": "neck",
-					"choice_name": "脖子",
-					"table_name": "脖子",
+					"id": "tail",
+					"choice_name": "尾巴",
+					"table_name": "尾巴",
 					"slots": 2,
-					"hit_penalty": -5,
+					"hit_penalty": -3,
 					"dr_bonus": 0,
-					"description": "颈、喉。钝击和腐蚀伤害的伤害乘数改为×1.5，切割伤害乘数改为×2。GM 可以认为被切割伤害击中脖子杀死的人死于斩首！",
+					"description": "对于致残，一条尾巴如果可以认为是额外手臂或近战部位，或者是一条鱼尾，那就把它当作肢体( 手臂、腿)；否则，将其视为手脚( 手、脚)。致残的尾巴会影响平衡。对于地面生物，这是DX-1。对于游泳者或飞行者，DX-2同时移动减半。如果动物没有尾巴，或者尾巴非常短(比如兔子)，就把它当作“躯干”。",
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
@@ -535,74 +505,74 @@
 		}
 	},
 	"created_date": "May 16, 2020, 12:00 AM",
-	"modified_date": "Jun 21, 2020, 11:33 AM",
+	"modified_date": "Jun 20, 2020, 2:00 PM",
 	"profile": {
-		"name": "Gorilla",
-		"weight": "400 lb",
+		"name": "老虎",
+		"weight": "500 lb",
 		"SM": 1
 	},
 	"attributes": [
 		{
 			"attr_id": "st",
-			"adj": 5,
+			"adj": 7,
 			"calc": {
-				"value": 15,
-				"points": 45
+				"value": 17,
+				"points": 35
 			}
 		},
 		{
 			"attr_id": "dx",
-			"adj": 2,
+			"adj": 3,
 			"calc": {
-				"value": 12,
-				"points": 40
+				"value": 13,
+				"points": 36
 			}
 		},
 		{
 			"attr_id": "iq",
-			"adj": -4,
+			"adj": -6,
 			"calc": {
-				"value": 6,
-				"points": -80
+				"value": 4,
+				"points": -120
 			}
 		},
 		{
 			"attr_id": "ht",
-			"adj": 2,
+			"adj": 1,
 			"calc": {
-				"value": 12,
-				"points": 20
+				"value": 11,
+				"points": 10
 			}
 		},
 		{
 			"attr_id": "will",
-			"adj": 4,
+			"adj": 7,
 			"calc": {
-				"value": 10,
-				"points": 20
+				"value": 11,
+				"points": 35
 			}
 		},
 		{
 			"attr_id": "fright_check",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 13,
 				"points": 0
 			}
 		},
 		{
 			"attr_id": "per",
-			"adj": 4,
+			"adj": 8,
 			"calc": {
-				"value": 10,
-				"points": 20
+				"value": 12,
+				"points": 40
 			}
 		},
 		{
 			"attr_id": "vision",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 12,
 				"points": 0
 			}
 		},
@@ -610,7 +580,7 @@
 			"attr_id": "hearing",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 12,
 				"points": 0
 			}
 		},
@@ -618,7 +588,7 @@
 			"attr_id": "taste_smell",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 12,
 				"points": 0
 			}
 		},
@@ -626,7 +596,7 @@
 			"attr_id": "touch",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 12,
 				"points": 0
 			}
 		},
@@ -640,10 +610,10 @@
 		},
 		{
 			"attr_id": "basic_move",
-			"adj": 1,
+			"adj": 4,
 			"calc": {
-				"value": 7,
-				"points": 5
+				"value": 10,
+				"points": 20
 			}
 		},
 		{
@@ -651,8 +621,8 @@
 			"adj": 0,
 			"damage": 0,
 			"calc": {
-				"value": 12,
-				"current": 12,
+				"value": 11,
+				"current": 11,
 				"points": 0
 			}
 		},
@@ -661,118 +631,126 @@
 			"adj": 0,
 			"damage": 0,
 			"calc": {
-				"value": 15,
-				"current": 15,
+				"value": 17,
+				"current": 17,
 				"points": 0
 			}
 		}
 	],
-	"total_points": 56,
+	"total_points": 31,
 	"advantages": [
 		{
 			"type": "advantage",
-			"id": "2d90ea67-86cc-4f01-a29e-f6059821908d",
-			"name": "强壮手臂",
+			"id": "222db4f1-bff3-4c59-be93-283d1e2d4c0f",
+			"name": "利爪 (脚)",
 			"physical": true,
-			"levels": "3",
-			"points_per_level": 5,
-			"modifiers": [
+			"base_points": 5,
+			"weapons": [
 				{
-					"type": "modifier",
-					"id": "ad667e8e-7dbb-45b6-adfa-3a0d66c59b22",
-					"disabled": true,
-					"name": "无操作肢",
-					"reference": "B145",
-					"cost_type": "percentage",
-					"cost": -40,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "75bd7d21-5b3a-403c-b661-bdfa3e6d118b",
-					"disabled": true,
-					"name": "仅一条手臂",
-					"reference": "B40",
-					"cost_type": "points",
-					"cost": -2,
-					"affects": "levels_only",
-					"notes": "@Which@"
-				},
-				{
-					"type": "modifier",
-					"id": "e5e154bd-6bce-4f60-8c82-56d243990439",
-					"disabled": true,
-					"name": "三条手臂",
-					"reference": "B40",
-					"cost_type": "points",
-					"cost": 3,
-					"affects": "levels_only"
-				},
-				{
-					"type": "modifier",
-					"id": "4d1b2a21-048d-4169-96f2-e684be82622f",
-					"disabled": true,
-					"name": "体形",
-					"cost_type": "percentage",
-					"cost": -10,
-					"affects": "total",
-					"levels": 1
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cut",
+						"st": "thr"
+					},
+					"usage": "踢踹",
+					"reach": "C,1",
+					"parry": "No",
+					"block": "No",
+					"calc": {
+						"level": 13,
+						"parry": "No",
+						"block": "No",
+						"damage": "1d+3 cut"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "斗殴",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "空手技击",
+							"modifier": -2
+						}
+					]
 				}
 			],
-			"reference": "B40",
+			"reference": "B42",
 			"calc": {
-				"points": 15
+				"points": 5
 			},
-			"features": [
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"per_level": true,
-					"attribute": "st",
-					"limitation": "striking_only"
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"per_level": true,
-					"attribute": "st",
-					"limitation": "lifting_only"
-				}
-			],
-			"notes": "只会在以特定手臂举起、投掷物体或是进行攻击时起效。上面的伤害和举力数据已经被调整。“背起”的举力数据需要手动向下调整以弥补错误的增加。",
 			"categories": [
 				"优势"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "4c951a25-7626-4be0-bade-b8ba963676db",
-			"name": "臂行者",
-			"physical": true,
-			"exotic": true,
-			"base_points": 5,
-			"reference": "B41",
+			"id": "a43164a4-6061-4b40-8fa0-9fbb68105e03",
+			"name": "战斗反射",
+			"mental": true,
+			"base_points": 15,
+			"reference": "B43",
 			"calc": {
-				"points": 5
+				"points": 15
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Enhanced Time Sense"
+						}
+					}
+				]
 			},
 			"features": [
 				{
 					"type": "skill_bonus",
-					"amount": 2,
+					"amount": 1,
 					"selection_type": "skills_with_name",
 					"name": {
-						"compare": "is",
-						"qualifier": "攀爬"
+						"compare": "starts_with",
+						"qualifier": "即时备战"
 					}
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "dodge"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "parry"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "block"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 2,
+					"attribute": "fright_check"
 				}
 			],
+			"notes": "你的所有主动防御(见防御)+1，即时备战技能+1，还有恐惧检定+2。你永远不会被突然出现的意外情况“惊呆”，并且在尝试清醒、试图从被突袭带来的惊讶中回过神，以及从心理震慑中恢复的IQ 检定中获得+6 的加值。你的队伍会在避免突袭的对抗中获得+1 奖励，如果你是队伍的领导者，则获得+2。",
 			"categories": [
 				"优势"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "f8b67b69-6294-49c5-b45e-b5b4298b1ad3",
+			"id": "2954475d-f9de-4b1a-a508-ae78f88c679a",
 			"name": "伤害减免",
 			"physical": true,
 			"exotic": true,
@@ -781,7 +759,7 @@
 			"modifiers": [
 				{
 					"type": "modifier",
-					"id": "9ea95f40-427c-4697-b4c5-df7ee50ede4b",
+					"id": "f58916bf-a9ce-4c6d-91e1-88d0965e990f",
 					"disabled": true,
 					"name": "力场护盾",
 					"reference": "B47",
@@ -791,7 +769,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "8079a163-b145-48e4-9036-033a97700e0d",
+					"id": "320f455d-5311-4e48-a609-a4f19f6064a8",
 					"disabled": true,
 					"name": "硬化",
 					"reference": "B47",
@@ -802,7 +780,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "5319cfff-4664-461b-891a-9813fe26f1d7",
+					"id": "4fa64f70-5e5c-4bd7-810e-fe647846e83f",
 					"disabled": true,
 					"name": "吸收",
 					"reference": "B46",
@@ -813,7 +791,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "8498f5af-6a3f-458e-9d7c-e155149166ce",
+					"id": "c050fba4-bcca-4233-a0d1-162736bd1eb9",
 					"disabled": true,
 					"name": "吸收",
 					"reference": "B46",
@@ -824,7 +802,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "3f0566ce-eabf-40da-9153-027ff26f3b06",
+					"id": "88840a91-98c7-46de-b96f-ec8bb45e7a1c",
 					"disabled": true,
 					"name": "吸收",
 					"reference": "B46",
@@ -835,7 +813,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "b744e9fc-77aa-40e5-93dd-c6bd327e6269",
+					"id": "930172d1-eaf1-41dd-903d-a028cdbf4467",
 					"disabled": true,
 					"name": "反弹",
 					"reference": "B47",
@@ -845,7 +823,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "7b4d957c-0834-4df0-8836-ef0894095c8a",
+					"id": "66bb8b60-6a5b-4779-a4b6-b225fed302bc",
 					"disabled": true,
 					"name": "祸根",
 					"reference": "H14",
@@ -856,7 +834,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "194b70ad-ffef-41c3-9728-bbca8509aae3",
+					"id": "c0b67110-fe1c-41c7-b72a-fcd664895508",
 					"disabled": true,
 					"name": "祸根",
 					"reference": "H14",
@@ -867,7 +845,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "dcae7c84-ece5-48e5-8fd3-6e5ec40466da",
+					"id": "3925c8a3-c886-409d-87a9-dbf33a792eec",
 					"disabled": true,
 					"name": "祸根",
 					"reference": "H14",
@@ -878,7 +856,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "a0f62dbf-f854-48e6-b214-591af0441d2c",
+					"id": "bbe45da8-e4fd-40c7-a7dd-af7805ab3ebd",
 					"disabled": true,
 					"name": "祸根",
 					"reference": "H14",
@@ -889,7 +867,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "4b7deebf-e168-4e6d-bfee-43fb0d42b3ad",
+					"id": "22052cb3-b403-422c-a0b5-cc96497871d6",
 					"disabled": true,
 					"name": "定向",
 					"reference": "B47",
@@ -900,7 +878,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "aa7bccea-4fd5-4e6f-a6ae-dd74584f9e44",
+					"id": "0e33b78b-4b9e-4b99-bd9b-3bd5cfe48860",
 					"disabled": true,
 					"name": "柔软",
 					"reference": "B47",
@@ -910,7 +888,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "b900195b-fafa-498d-a90c-2bfd86085078",
+					"id": "9763d758-38d3-44ae-b417-fba50818bd54",
 					"disabled": true,
 					"name": "有限伤害类型",
 					"reference": "B46",
@@ -921,7 +899,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "5515317f-f36a-42e6-b25b-589314a52d84",
+					"id": "37773d69-b012-4887-9fb9-72c6bf7c8917",
 					"disabled": true,
 					"name": "半剥离",
 					"reference": "B47",
@@ -931,7 +909,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "41129dc7-7fc8-4c41-aa5a-1cd54e4e6976",
+					"id": "c1e96f6b-7d8b-4adc-ba66-2b152faccb5b",
 					"disabled": true,
 					"name": "无法穿着护甲",
 					"reference": "B47",
@@ -941,7 +919,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "2987cf33-6983-4b1c-ad86-0585590152c4",
+					"id": "ea43b5d3-8434-4785-8de5-4f0d3d5c1ecc",
 					"disabled": true,
 					"name": "定向",
 					"reference": "B47",
@@ -952,7 +930,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "a5a8b53c-554c-4404-875e-d4e76a468a16",
+					"id": "139eaecc-c507-430b-aaff-dd0b7eeab573",
 					"disabled": true,
 					"name": "有限伤害类型",
 					"reference": "B46",
@@ -963,7 +941,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "d82cb88b-6201-4a22-a3de-befbd78dd00c",
+					"id": "44cbf988-fe73-47d2-a6f3-5b3ec29c39c1",
 					"name": "硬皮",
 					"cost_type": "percentage",
 					"cost": -40,
@@ -972,7 +950,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "b093d093-edc2-4373-81c0-bb9d6554aee6",
+					"id": "d81dfd22-e33c-4659-9501-be57aa99816e",
 					"disabled": true,
 					"name": "有限伤害类型",
 					"reference": "B46",
@@ -983,7 +961,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "6db54307-08c3-4965-a1fb-b613df8678b9",
+					"id": "a786231a-baff-46de-802d-53effe70fb16",
 					"disabled": true,
 					"name": "剥离",
 					"reference": "B47",
@@ -993,7 +971,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "3e80b816-7df2-4202-b77b-d400a866f69e",
+					"id": "98679b2f-a887-413c-bc9c-9e38c14aacec",
 					"disabled": true,
 					"name": "有限伤害类型",
 					"reference": "B46",
@@ -1004,7 +982,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "269b3a1d-1655-4c28-bdef-c4a1a4f80aa8",
+					"id": "1720ff5a-844a-49eb-b147-1fbbc291b0d8",
 					"disabled": true,
 					"name": "Laminate",
 					"reference": "RSWL18",
@@ -1014,7 +992,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "ffdb3b92-c2ea-4976-a19f-93b1401ef552",
+					"id": "187c5547-f02b-4b68-851c-78eb5a780b6d",
 					"disabled": true,
 					"name": "Malediction-Proof",
 					"reference": "PSI14",
@@ -1024,7 +1002,7 @@
 				},
 				{
 					"type": "modifier",
-					"id": "b0b954a0-dd5a-4131-820b-0cc753809c4e",
+					"id": "0fc41777-ba45-4aa3-a1db-b28ae8f8b91e",
 					"disabled": true,
 					"name": "Maledictions Only",
 					"reference": "PSI14",
@@ -1128,167 +1106,147 @@
 			]
 		},
 		{
-			"type": "advantage",
-			"id": "1315eea6-77e0-4b6a-b50c-4f7f49ab98a7",
-			"name": "手指笨拙",
-			"physical": true,
-			"levels": "1",
-			"points_per_level": -5,
-			"reference": "B138",
+			"type": "advantage_container",
+			"id": "2c4ccbce-f5ac-4742-9978-ada1fa931fbc",
+			"name": "超特质：四足生物",
+			"reference": "B263",
 			"calc": {
-				"points": -5
+				"points": -35
 			},
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "advantage_prereq",
-						"has": false,
-						"name": {
-							"compare": "is",
-							"qualifier": "巧手"
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"id": "90f3a9c4-6909-42b8-a6aa-63670c3caf0b",
+					"name": "额外腿部",
+					"physical": true,
+					"exotic": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "8515d1e1-189f-481a-a353-fb2977c9c628",
+							"name": "4",
+							"reference": "B54",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "3b28a907-fd1d-416d-8374-9256414c61ec",
+							"disabled": true,
+							"name": "@5 或 6@",
+							"reference": "B55",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "564204b9-a261-437c-a467-7bb3037de07c",
+							"disabled": true,
+							"name": "@7+@",
+							"reference": "B55",
+							"cost_type": "points",
+							"cost": 15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "3f39aa70-a2aa-4fd4-8c8c-62814edfb25e",
+							"disabled": true,
+							"name": "长",
+							"reference": "B55",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total",
+							"levels": 1
+						},
+						{
+							"type": "modifier",
+							"id": "e7b5a707-415e-4a4d-a3ce-ed78742e31e1",
+							"disabled": true,
+							"name": "不能踢击",
+							"reference": "B55",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "e7f9de79-ab0f-4987-a35d-828c7a2593b8",
+							"disabled": true,
+							"name": "更加柔软",
+							"reference": "MATG27",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "1d493283-93c0-4f60-a1e8-c20d612293b8",
+							"disabled": true,
+							"name": "Prehensile Feet",
+							"reference": "MATG28",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
 						}
-					}
-				]
-			},
-			"features": [
-				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "contains",
-						"qualifier": "艺术家"
-					}
+					],
+					"reference": "B54",
+					"calc": {
+						"points": 5
+					},
+					"categories": [
+						"优势"
+					]
 				},
 				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "珠宝加工"
-					}
+					"type": "advantage",
+					"id": "95e958e4-8060-457e-87ac-b30ca124534c",
+					"name": "非直立",
+					"physical": true,
+					"exotic": true,
+					"base_points": -10,
+					"reference": "B139",
+					"calc": {
+						"points": -10
+					},
+					"categories": [
+						"劣势"
+					]
 				},
 				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "结绳"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "皮革加工"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "开锁"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "扒窃"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "缝纫"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "手上功夫"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "手术"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "机工"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "contains",
-						"qualifier": "机修"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": -3,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "contains",
-						"qualifier": "即时备战"
-					}
-				},
-				{
-					"type": "reaction_bonus",
-					"amount": -1,
-					"per_level": true,
-					"situation": "from others where being tidy or well-groomed would matter"
-				},
-				{
-					"type": "reaction_bonus",
-					"amount": -1,
-					"per_level": true,
-					"situation": "to any Influence roll where being tidy or well-groomed would matter"
+					"type": "advantage",
+					"id": "e1cadb6f-aa3a-4517-8c47-4fa0490dd21c",
+					"name": "无操作肢",
+					"physical": true,
+					"base_points": -30,
+					"reference": "B145",
+					"calc": {
+						"points": -30
+					},
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 40
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 40
+						}
+					],
+					"categories": [
+						"劣势"
+					]
 				}
-			],
-			"categories": [
-				"劣势"
 			]
 		},
 		{
 			"type": "advantage_container",
-			"id": "bdc2fad1-d00e-4e28-a2e1-381e19637776",
+			"id": "9fb30bbd-7300-4691-974c-63aa85cdb83d",
 			"name": "超特质：野生动物",
 			"reference": "B263",
 			"calc": {
@@ -1298,7 +1256,7 @@
 			"children": [
 				{
 					"type": "advantage",
-					"id": "9494696f-1efe-48fc-bd7b-b1e6db5b05cd",
+					"id": "15633fd5-f190-4933-8c90-b910fcfd8af4",
 					"name": "兽性",
 					"mental": true,
 					"exotic": true,
@@ -1313,7 +1271,7 @@
 				},
 				{
 					"type": "advantage",
-					"id": "1556253f-12fc-4ac5-95a6-7f63de370916",
+					"id": "5ab78e57-312a-4adc-951a-ab1c2cf49194",
 					"name": "无法交谈",
 					"physical": true,
 					"base_points": -15,
@@ -1341,7 +1299,7 @@
 				},
 				{
 					"type": "advantage",
-					"id": "dd4d6795-cb0a-464a-8599-fdd2be271c93",
+					"id": "285aa1c8-ced3-4689-976f-9c5b307022a8",
 					"name": "思想僵化",
 					"mental": true,
 					"base_points": -5,
@@ -1356,7 +1314,7 @@
 				},
 				{
 					"type": "advantage",
-					"id": "ab06bc9e-9ee8-4e7b-a8c3-a72f902aa95f",
+					"id": "fcade1f0-df84-4054-a42b-a581e189f79b",
 					"name": "禁用特质 (固定IQ)",
 					"physical": true,
 					"reference": "B263",
@@ -1368,23 +1326,22 @@
 		},
 		{
 			"type": "advantage",
-			"id": "ee2330e3-e62a-46df-934d-84f8a3820550",
-			"name": "半直立",
+			"id": "6c33c158-ae6c-4343-9221-e0236fd6bf97",
+			"name": "夜视",
 			"physical": true,
-			"exotic": true,
-			"base_points": -5,
-			"reference": "B153",
+			"levels": "5",
+			"points_per_level": 1,
+			"reference": "B71",
 			"calc": {
-				"points": -5
+				"points": 5
 			},
-			"notes": "直立移动减少40%移动力",
 			"categories": [
-				"劣势"
+				"优势"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "3da6ea0c-4856-4469-8783-d844cce4e7f1",
+			"id": "519adb9a-9564-44b4-ba79-92f986ec800d",
 			"name": "利齿",
 			"physical": true,
 			"exotic": true,
@@ -1402,10 +1359,10 @@
 					"parry": "No",
 					"block": "No",
 					"calc": {
-						"level": 12,
+						"level": 15,
 						"parry": "No",
 						"block": "No",
-						"damage": "1d+1 cut"
+						"damage": "1d+2 cut"
 					},
 					"defaults": [
 						{
@@ -1425,37 +1382,118 @@
 			"categories": [
 				"Perk"
 			]
+		},
+		{
+			"type": "advantage",
+			"id": "1695dca1-6869-444a-b1a6-32f18c581cd5",
+			"name": "超温耐受",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": 1,
+			"reference": "B93",
+			"calc": {
+				"points": 1
+			},
+			"categories": [
+				"优势"
+			]
 		}
 	],
 	"skills": [
 		{
 			"type": "skill",
-			"id": "b02148b0-42bb-4593-8316-bc68222035e9",
-			"name": "攀爬",
-			"reference": "B183",
+			"id": "d1bf295e-34ef-45ac-a907-c30c3c8d2bd3",
+			"name": "斗殴",
+			"reference": "B182",
+			"difficulty": "dx/e",
+			"points": 4,
+			"calc": {
+				"level": 15,
+				"rsl": "DX+2"
+			},
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "斗殴"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 2
+					}
+				}
+			],
+			"categories": [
+				"战斗/武器",
+				"近战战斗"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "2a3167ce-82da-4c88-82b0-ca9321d17add",
+			"name": "潜行",
+			"reference": "B222",
 			"encumbrance_penalty_multiplier": 1,
 			"difficulty": "dx/a",
 			"points": 2,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 14,
-				"rsl": "DX+2"
+				"level": 13,
+				"rsl": "DX+0"
 			},
 			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
 				{
 					"type": "dx",
 					"modifier": -5
 				}
 			],
 			"categories": [
-				"运动",
 				"犯罪/街道",
+				"警察",
+				"间谍"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "f62854b6-ae5c-44ac-be3d-cd1bf4e6625e",
+			"name": "游泳",
+			"reference": "B224",
+			"encumbrance_penalty_multiplier": 2,
+			"difficulty": "ht/e",
+			"points": 4,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -4,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "HT+2"
+			},
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"运动",
 				"户外/探索"
 			]
 		}
@@ -1463,34 +1501,34 @@
 	"notes": [
 		{
 			"type": "note",
-			"id": "713fb561-938c-46fd-97b8-988baa552ecb",
-			"text": "类人猿是很聪明的——以至于难以真正预知。对像这样动物的控制投骰判定要-1。类人猿在近战中更喜欢使用抓擒和咬的攻击方式而非打击或踢击。",
+			"id": "b733f119-2cd3-4e33-9888-3a3d83fe5c77",
+			"text": "一种独行掠食动物，通常居住在丛林里。",
 			"reference": "B456"
 		}
 	],
 	"calc": {
-		"swing": "3d",
+		"swing": "3d-1",
 		"thrust": "1d+2",
-		"basic_lift": "65 lb",
-		"lifting_st_bonus": 3,
-		"striking_st_bonus": 3,
+		"basic_lift": "58 lb",
+		"lifting_st_bonus": 0,
+		"striking_st_bonus": 0,
 		"throwing_st_bonus": 0,
 		"move": [
-			7,
-			5,
+			10,
+			8,
+			6,
 			4,
-			2,
-			1
+			2
 		],
 		"dodge": [
+			10,
 			9,
 			8,
 			7,
-			6,
-			5
+			6
 		],
-		"dodge_bonus": 0,
-		"block_bonus": 0,
-		"parry_bonus": 0
+		"dodge_bonus": 1,
+		"block_bonus": 1,
+		"parry_bonus": 1
 	}
 }

@@ -333,7 +333,7 @@
 		],
 		"hit_locations": {
 			"id": "ichthyoid",
-			"name": "Ichthyoid",
+			"name": "鱼形",
 			"roll": "3d",
 			"locations": [
 				{
@@ -462,7 +462,7 @@
 	"created_date": "May 16, 2020, 12:00 AM",
 	"modified_date": "Jun 20, 2020, 1:58 PM",
 	"profile": {
-		"name": "Tiger Shark",
+		"name": "虎鲨",
 		"weight": "900 lb",
 		"SM": 2
 	},
@@ -672,7 +672,7 @@
 		{
 			"type": "advantage",
 			"id": "6024ef70-74dc-456f-b72f-c43a2e75e1e0",
-			"name": "Discriminatory Smell",
+			"name": "识别性嗅觉",
 			"physical": true,
 			"exotic": true,
 			"base_points": 15,
@@ -681,7 +681,7 @@
 					"type": "modifier",
 					"id": "fa52b3da-7e98-444e-b36a-bf330cf05838",
 					"disabled": true,
-					"name": "Emotion Sense",
+					"name": "情绪感应",
 					"reference": "B49",
 					"cost_type": "percentage",
 					"cost": 50,
@@ -709,7 +709,7 @@
 		{
 			"type": "advantage",
 			"id": "fd60a06f-9d64-43b5-97ed-59fb7334b33e",
-			"name": "Doesn't Breathe",
+			"name": "无需呼吸",
 			"physical": true,
 			"exotic": true,
 			"base_points": 20,
@@ -717,7 +717,7 @@
 				{
 					"type": "modifier",
 					"id": "4dc69546-880f-4306-a3f1-3d6baebebc3e",
-					"name": "Gills",
+					"name": "鳃",
 					"reference": "B49",
 					"cost_type": "percentage",
 					"cost": -50,
@@ -727,7 +727,7 @@
 					"type": "modifier",
 					"id": "f5ae140a-bdb3-480a-90e0-1a4cbaeb767c",
 					"disabled": true,
-					"name": "Gills",
+					"name": "鳃",
 					"reference": "B49",
 					"cost_type": "points",
 					"cost": -20,
@@ -738,7 +738,7 @@
 					"type": "modifier",
 					"id": "d8fa6264-38c5-49c6-88a3-07779221bc3d",
 					"disabled": true,
-					"name": "Oxygen 吸收",
+					"name": "吸收氧气",
 					"reference": "B49",
 					"cost_type": "percentage",
 					"cost": -25,
@@ -748,62 +748,62 @@
 					"type": "modifier",
 					"id": "e9361166-125c-4f40-a645-6c89752161cd",
 					"disabled": true,
-					"name": "Oxygen Storage",
+					"name": "氧气储存",
 					"reference": "B49",
 					"cost_type": "percentage",
 					"cost": -50,
 					"affects": "total",
-					"notes": "Can hold breath 25 times as long as normal"
+					"notes": "屏息时间是通常情况的25倍"
 				},
 				{
 					"type": "modifier",
 					"id": "d4be7fc1-be74-461e-b88f-ff7e68394183",
 					"disabled": true,
-					"name": "Oxygen Storage",
+					"name": "氧气储存",
 					"reference": "B49",
 					"cost_type": "percentage",
 					"cost": -40,
 					"affects": "total",
-					"notes": "Can hold breath 50 times as long as normal"
+					"notes": "屏息时间是通常情况的50倍"
 				},
 				{
 					"type": "modifier",
 					"id": "a2ae2a92-b217-42c4-845e-336d32f25791",
 					"disabled": true,
-					"name": "Oxygen Storage",
+					"name": "氧气储存",
 					"reference": "B49",
 					"cost_type": "percentage",
 					"cost": -30,
 					"affects": "total",
-					"notes": "Can hold breath 100 times as long as normal"
+					"notes": "屏息时间是通常情况的100倍"
 				},
 				{
 					"type": "modifier",
 					"id": "d82ca642-0f81-4ab7-89f3-cefa1aff6b11",
 					"disabled": true,
-					"name": "Oxygen Storage",
+					"name": "氧气储存",
 					"reference": "B49",
 					"cost_type": "percentage",
 					"cost": -20,
 					"affects": "total",
-					"notes": "Can hold breath 200 times as long as normal"
+					"notes": "屏息时间是通常情况的200倍"
 				},
 				{
 					"type": "modifier",
 					"id": "39cf2c98-0884-407d-887e-72322fd69e2e",
 					"disabled": true,
-					"name": "Oxygen Storage",
+					"name": "氧气储存",
 					"reference": "B49",
 					"cost_type": "percentage",
 					"cost": -10,
 					"affects": "total",
-					"notes": "Can hold breath 300 times as long as normal"
+					"notes": "屏息时间是通常情况的300倍"
 				},
 				{
 					"type": "modifier",
 					"id": "1823315e-6949-47b8-ba58-de447052059e",
 					"disabled": true,
-					"name": "Oxygen Combustion",
+					"name": "燃烧氧气",
 					"reference": "B49",
 					"cost_type": "percentage",
 					"cost": -50,
@@ -925,7 +925,7 @@
 		{
 			"type": "advantage_container",
 			"id": "2acb631b-dc26-4078-a8d9-024adf02c26a",
-			"name": "超特质：Ichthyoid",
+			"name": "超特质：鱼形",
 			"reference": "B263",
 			"calc": {
 				"points": -50
@@ -935,7 +935,7 @@
 				{
 					"type": "advantage",
 					"id": "efe3504e-a20b-4d7a-8631-df1f924bda1f",
-					"name": "No Legs (Aquatic)",
+					"name": "无腿 (水生)",
 					"physical": true,
 					"exotic": true,
 					"modifiers": [
@@ -943,7 +943,7 @@
 							"type": "modifier",
 							"id": "59a83637-13c8-4b45-a6a3-92d81ba658fa",
 							"disabled": true,
-							"name": "Can't dive",
+							"name": "无法潜水",
 							"reference": "B145",
 							"cost_type": "points",
 							"cost": -5,
@@ -953,7 +953,7 @@
 							"type": "modifier",
 							"id": "1b6016c1-dc16-4b6f-93cb-abf9e17762a0",
 							"disabled": true,
-							"name": "Can't armor @Fins/Masts/Sails/Paddles@",
+							"name": "无法保护@鳍、桅杆、桨或帆@",
 							"reference": "B145",
 							"cost_type": "points",
 							"cost": -5,
@@ -971,7 +971,7 @@
 				{
 					"type": "advantage",
 					"id": "6e40b052-0eac-4b25-8c81-369d28d6ac93",
-					"name": "No Manipulators",
+					"name": "无肢",
 					"physical": true,
 					"base_points": -50,
 					"reference": "B145",
@@ -1079,7 +1079,7 @@
 		{
 			"type": "advantage",
 			"id": "bcc68fa5-8ca2-4967-b18c-3549592beae7",
-			"name": "Pressure Support",
+			"name": "高压生存",
 			"physical": true,
 			"exotic": true,
 			"levels": "2",
@@ -1095,7 +1095,7 @@
 		{
 			"type": "advantage",
 			"id": "a91eb0a3-7ae0-4b4b-aa2f-b1f6692851d1",
-			"name": "近战部位, Crushing (Snout)",
+			"name": "近战部位, 钝击(口鼻)",
 			"physical": true,
 			"exotic": true,
 			"base_points": 5,
@@ -1138,7 +1138,7 @@
 		{
 			"type": "advantage",
 			"id": "65bf165d-5dc7-4533-88bb-5c312ea381dd",
-			"name": "Subsonic 听觉",
+			"name": "次声波听觉",
 			"physical": true,
 			"exotic": true,
 			"base_points": 5,
@@ -1147,7 +1147,7 @@
 					"type": "modifier",
 					"id": "ddefae16-301d-4887-bcdf-ffedcb30d0f5",
 					"disabled": true,
-					"name": "No normal hearing",
+					"name": "无普通听觉",
 					"reference": "B89",
 					"cost_type": "points",
 					"cost": -5,
@@ -1209,7 +1209,7 @@
 		{
 			"type": "advantage",
 			"id": "4b91a2b8-4f67-4da9-b3d6-3106d6a6797d",
-			"name": "Vibration Sense",
+			"name": "振动感应",
 			"physical": true,
 			"exotic": true,
 			"base_points": 10,
@@ -1218,7 +1218,7 @@
 					"type": "modifier",
 					"id": "33a057df-c3fa-4d6d-8073-f18fdec9b053",
 					"disabled": true,
-					"name": "Universal",
+					"name": "普适",
 					"reference": "B96",
 					"cost_type": "percentage",
 					"cost": 50,
@@ -1292,7 +1292,7 @@
 			"id": "ee7bb85f-a294-43e3-8ab6-18f7eb9ae0b5",
 			"name": "生存",
 			"reference": "B223",
-			"specialization": "Open Ocean",
+			"specialization": "大洋",
 			"difficulty": "per/a",
 			"points": 8,
 			"defaulted_from": {
@@ -1319,43 +1319,43 @@
 				{
 					"type": "skill",
 					"name": "生存",
-					"specialization": "Bank",
+					"specialization": "海岸",
 					"modifier": -4
 				},
 				{
 					"type": "skill",
 					"name": "生存",
-					"specialization": "Deep Ocean Vent",
+					"specialization": "海沟",
 					"modifier": -4
 				},
 				{
 					"type": "skill",
 					"name": "生存",
-					"specialization": "Fresh-Water Lake",
+					"specialization": "淡水湖",
 					"modifier": -4
 				},
 				{
 					"type": "skill",
 					"name": "生存",
-					"specialization": "Reef",
+					"specialization": "珊瑚丛",
 					"modifier": -4
 				},
 				{
 					"type": "skill",
 					"name": "生存",
-					"specialization": "River/Stream",
+					"specialization": "河流/溪流",
 					"modifier": -4
 				},
 				{
 					"type": "skill",
 					"name": "生存",
-					"specialization": "Salt-Water Sea",
+					"specialization": "咸水海",
 					"modifier": -4
 				},
 				{
 					"type": "skill",
 					"name": "生存",
-					"specialization": "Tropical Lagoon",
+					"specialization": "热带环礁",
 					"modifier": -4
 				}
 			],

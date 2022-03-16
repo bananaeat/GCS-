@@ -1026,7 +1026,7 @@
 		{
 			"type": "advantage",
 			"id": "9356ab36-046e-4763-b72e-923dfa93095b",
-			"name": "Peripheral 视觉",
+			"name": "广角视觉",
 			"physical": true,
 			"base_points": 15,
 			"modifiers": [
@@ -1034,12 +1034,12 @@
 					"type": "modifier",
 					"id": "a315128c-5742-4d9c-9cbc-f5e4adf71561",
 					"disabled": true,
-					"name": "Easy to Hit",
+					"name": "易于命中",
 					"reference": "B75",
 					"cost_type": "percentage",
 					"cost": -20,
 					"affects": "total",
-					"notes": "Others can target your eyes at only -6 to hit"
+					"notes": "其他人攻击你的眼睛仅受到-6减值"
 				}
 			],
 			"reference": "B74",
@@ -1159,7 +1159,7 @@
 				"points": -2
 			},
 			"categories": [
-				"Animal",
+				"动物",
 				"劣势"
 			]
 		}
