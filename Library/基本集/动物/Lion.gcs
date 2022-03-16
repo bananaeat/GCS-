@@ -42,7 +42,7 @@
 				"id": "st",
 				"type": "integer",
 				"name": "ST",
-				"full_name": "Strength",
+				"full_name": "力量",
 				"attribute_base": "10",
 				"cost_per_point": 10,
 				"cost_adj_percent_per_sm": 10
@@ -51,7 +51,7 @@
 				"id": "dx",
 				"type": "integer",
 				"name": "DX",
-				"full_name": "Dexterity",
+				"full_name": "敏捷",
 				"attribute_base": "10",
 				"cost_per_point": 20,
 				"cost_adj_percent_per_sm": 0
@@ -60,7 +60,7 @@
 				"id": "iq",
 				"type": "integer",
 				"name": "IQ",
-				"full_name": "Intelligence",
+				"full_name": "智力",
 				"attribute_base": "10",
 				"cost_per_point": 20,
 				"cost_adj_percent_per_sm": 0
@@ -69,7 +69,7 @@
 				"id": "ht",
 				"type": "integer",
 				"name": "HT",
-				"full_name": "Health",
+				"full_name": "体质",
 				"attribute_base": "10",
 				"cost_per_point": 10,
 				"cost_adj_percent_per_sm": 0
@@ -77,7 +77,7 @@
 			{
 				"id": "will",
 				"type": "integer",
-				"name": "Will",
+				"name": "意志",
 				"full_name": "",
 				"attribute_base": "$iq",
 				"cost_per_point": 5,
@@ -86,7 +86,7 @@
 			{
 				"id": "fright_check",
 				"type": "integer",
-				"name": "Fright Check",
+				"name": "恐惧检定",
 				"full_name": "",
 				"attribute_base": "$will",
 				"cost_per_point": 2,
@@ -96,7 +96,7 @@
 				"id": "per",
 				"type": "integer",
 				"name": "Per",
-				"full_name": "Perception",
+				"full_name": "感知",
 				"attribute_base": "$iq",
 				"cost_per_point": 5,
 				"cost_adj_percent_per_sm": 0
@@ -104,7 +104,7 @@
 			{
 				"id": "vision",
 				"type": "integer",
-				"name": "Vision",
+				"name": "视觉",
 				"full_name": "",
 				"attribute_base": "$per",
 				"cost_per_point": 2,
@@ -113,7 +113,7 @@
 			{
 				"id": "hearing",
 				"type": "integer",
-				"name": "Hearing",
+				"name": "听觉",
 				"full_name": "",
 				"attribute_base": "$per",
 				"cost_per_point": 2,
@@ -122,7 +122,7 @@
 			{
 				"id": "taste_smell",
 				"type": "integer",
-				"name": "Taste & Smell",
+				"name": "味觉/嗅觉",
 				"full_name": "",
 				"attribute_base": "$per",
 				"cost_per_point": 2,
@@ -131,7 +131,7 @@
 			{
 				"id": "touch",
 				"type": "integer",
-				"name": "Touch",
+				"name": "触觉",
 				"full_name": "",
 				"attribute_base": "$per",
 				"cost_per_point": 2,
@@ -140,7 +140,7 @@
 			{
 				"id": "basic_speed",
 				"type": "decimal",
-				"name": "Basic Speed",
+				"name": "基本速度",
 				"full_name": "",
 				"attribute_base": "($dx+$ht)/4",
 				"cost_per_point": 20,
@@ -149,7 +149,7 @@
 			{
 				"id": "basic_move",
 				"type": "integer",
-				"name": "Basic Move",
+				"name": "基本移动力",
 				"full_name": "",
 				"attribute_base": "floor($basic_speed)",
 				"cost_per_point": 5,
@@ -159,13 +159,13 @@
 				"id": "fp",
 				"type": "pool",
 				"name": "FP",
-				"full_name": "Fatigue Points",
+				"full_name": "体力值",
 				"attribute_base": "$ht",
 				"cost_per_point": 3,
 				"cost_adj_percent_per_sm": 0,
 				"thresholds": [
 					{
-						"state": "Unconscious",
+						"state": "失去意识",
 						"explanation": "",
 						"multiplier": -1,
 						"divisor": 1,
@@ -177,8 +177,8 @@
 						]
 					},
 					{
-						"state": "Collapse",
-						"explanation": "<html><body>\n<b>Roll vs. Will<\/b> to do anything besides talk or rest; failure causes unconsciousness<br>\nEach FP you lose below 0 also causes 1 HP of injury<br>\nMove, Dodge and ST are halved (B426)\n<\/body><\/html>",
+						"state": "累到崩溃",
+						"explanation": "<html><body>\n<b>做意志检定<\/b> 来进行除了休息和谈话之外的活动。失败导致失去意识。<br>\n你在0以下失去的每一点FP会导致失去一点HP。<br>\n移动力，闪避和力量减半(B426)\n<\/body><\/html>",
 						"multiplier": 0,
 						"divisor": 1,
 						"addition": 0,
@@ -189,8 +189,8 @@
 						]
 					},
 					{
-						"state": "Tired",
-						"explanation": "Move, Dodge and ST are halved (B426)",
+						"state": "疲惫",
+						"explanation": "移动力，闪避和力量减半 (B426)",
 						"multiplier": 1,
 						"divisor": 3,
 						"addition": 0,
@@ -201,7 +201,7 @@
 						]
 					},
 					{
-						"state": "Tiring",
+						"state": "累了",
 						"explanation": "",
 						"multiplier": 1,
 						"divisor": 1,
@@ -211,7 +211,7 @@
 						]
 					},
 					{
-						"state": "Rested",
+						"state": "休息充足",
 						"explanation": "",
 						"multiplier": 1,
 						"divisor": 1,
@@ -226,13 +226,13 @@
 				"id": "hp",
 				"type": "pool",
 				"name": "HP",
-				"full_name": "Hit Points",
+				"full_name": "生命值",
 				"attribute_base": "$st",
 				"cost_per_point": 2,
 				"cost_adj_percent_per_sm": 10,
 				"thresholds": [
 					{
-						"state": "Dead",
+						"state": "死亡",
 						"explanation": "",
 						"multiplier": -5,
 						"divisor": 1,
@@ -243,8 +243,8 @@
 						]
 					},
 					{
-						"state": "Dying #4",
-						"explanation": "<html><body>\n<b>Roll vs. HT<\/b> to avoid death<br>\n<b>Roll vs. HT-4<\/b> every second to avoid falling unconscious<br>\nMove and Dodge are halved (B419)\n<\/body><\/html>",
+						"state": "濒死 #4",
+						"explanation": "<html><body>\n<b>做HT检定<\/b>来避免死亡<br>\n<b>每秒做HT-4检定<\/b> 来避免失去意识<br>\n移动力和闪避减半 (B419)\n<\/body><\/html>",
 						"multiplier": -4,
 						"divisor": 1,
 						"addition": 0,
@@ -254,8 +254,8 @@
 						]
 					},
 					{
-						"state": "Dying #3",
-						"explanation": "<html><body>\n<b>Roll vs. HT<\/b> to avoid death<br>\n<b>Roll vs. HT-3<\/b> every second to avoid falling unconscious<br>\nMove and Dodge are halved (B419)\n<\/body><\/html>",
+						"state": "濒死 #3",
+						"explanation": "<html><body>\n<b>做HT检定<\/b>来避免死亡<br>\n<b>每秒做HT-3检定<\/b> 来避免失去意识<br>\n移动力和闪避减半 (B419)\n<\/body><\/html>>",
 						"multiplier": -3,
 						"divisor": 1,
 						"addition": 0,
@@ -265,8 +265,8 @@
 						]
 					},
 					{
-						"state": "Dying #2",
-						"explanation": "<html><body>\n<b>Roll vs. HT<\/b> to avoid death<br>\n<b>Roll vs. HT-2<\/b> every second to avoid falling unconscious<br>\nMove and Dodge are halved (B419)\n<\/body><\/html>",
+						"state": "濒死 #2",
+						"explanation": "<html><body>\n<b>做HT检定<\/b>来避免死亡<br>\n<b>每秒做HT-2检定<\/b> 来避免失去意识<br>\n移动力和闪避减半 (B419)\n<\/body><\/html>>",
 						"multiplier": -2,
 						"divisor": 1,
 						"addition": 0,
@@ -276,8 +276,8 @@
 						]
 					},
 					{
-						"state": "Dying #1",
-						"explanation": "<html><body>\n<b>Roll vs. HT<\/b> to avoid death<br>\n<b>Roll vs. HT-1<\/b> every second to avoid falling unconscious<br>\nMove and Dodge are halved (B419)\n<\/body><\/html>",
+						"state": "濒死 #1",
+						"explanation": "<html><body>\n<b>做HT检定<\/b>来避免死亡<br>\n<b>每秒做HT-1检定<\/b> 来避免失去意识<br>\n移动力和闪避减半 (B419)\n<\/body><\/html>>",
 						"multiplier": -1,
 						"divisor": 1,
 						"addition": 0,
@@ -287,8 +287,8 @@
 						]
 					},
 					{
-						"state": "Collapse",
-						"explanation": "<html><body>\n<b>Roll vs. HT<\/b> every second to avoid falling unconscious<br>\nMove and Dodge are halved (B419)\n<\/body><\/html>",
+						"state": "受伤崩溃",
+						"explanation": "<html><body>\n<b>每秒做HT检定<\/b> 来避免失去意识<br>\n移动力和闪避减半 (B419)\n<\/body><\/html>>",
 						"multiplier": 0,
 						"divisor": 1,
 						"addition": 0,
@@ -298,8 +298,8 @@
 						]
 					},
 					{
-						"state": "Reeling",
-						"explanation": "Move and Dodge are halved (B419)",
+						"state": "蹒跚",
+						"explanation": "移动和闪避减半 (B419)",
 						"multiplier": 1,
 						"divisor": 3,
 						"addition": 0,
@@ -309,7 +309,7 @@
 						]
 					},
 					{
-						"state": "Wounded",
+						"state": "受伤",
 						"explanation": "",
 						"multiplier": 1,
 						"divisor": 1,
@@ -319,7 +319,7 @@
 						]
 					},
 					{
-						"state": "Healthy",
+						"state": "健康",
 						"explanation": "",
 						"multiplier": 1,
 						"divisor": 1,
@@ -333,17 +333,17 @@
 		],
 		"hit_locations": {
 			"id": "quadruped",
-			"name": "Quadruped",
+			"name": "四足生物",
 			"roll": "3d",
 			"locations": [
 				{
 					"id": "eye",
-					"choice_name": "Eyes",
-					"table_name": "Eyes",
+					"choice_name": "眼睛",
+					"table_name": "眼睛",
 					"slots": 0,
 					"hit_penalty": -9,
 					"dr_bonus": 0,
-					"description": "An attack that misses by 1 hits the torso instead. Only impaling (imp), piercing (pi-, pi, pi+, pi++), and tight-beam burning (burn) attacks can target the eye – and only from the front or sides. Injury over HP÷10 blinds the eye. Otherwise, treat as skull, but without the extra DR!",
+					"description": "失败值仅为1的攻击视为击中躯干。只有穿刺、贯通、细光束灼烧攻击可以攻击眼睛，而且必须从前方或侧面攻击。超过HP/10 的伤害会导致失明。此外，视为对头颅造成的伤害，且没有额外DR！",
 					"calc": {
 						"roll_range": "-",
 						"dr": {
@@ -353,12 +353,12 @@
 				},
 				{
 					"id": "skull",
-					"choice_name": "Skull",
-					"table_name": "Skull",
+					"choice_name": "头颅",
+					"table_name": "头颅",
 					"slots": 2,
 					"hit_penalty": -7,
 					"dr_bonus": 2,
-					"description": "An attack that misses by 1 hits the torso instead. Wounding modifier is x4. Knockdown rolls are at -10. Critical hits use the Critical Head Blow Table (B556). Exception: These special effects do not apply to toxic (tox) damage.",
+					"description": "失败值仅为1的攻击视为击中躯干。头颅有额外2点DR。所有伤害乘数改为×4，抵抗击倒的HT检定-10，攻击大成功从头部致命攻击表查找结果。例外：此段特效对毒伤害不适用。",
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
@@ -368,12 +368,12 @@
 				},
 				{
 					"id": "face",
-					"choice_name": "Face",
-					"table_name": "Face",
+					"choice_name": "脸部",
+					"table_name": "脸部",
 					"slots": 1,
 					"hit_penalty": -5,
 					"dr_bonus": 0,
-					"description": "An attack that misses by 1 hits the torso instead. Jaw, cheeks, nose, ears, etc. If the target has an open-faced helmet, ignore its DR. Knockdown rolls are at -5. Critical hits use the Critical Head Blow Table (B556). Corrosion (cor) damage gets a x1½ wounding modifier, and if it inflicts a major wound, it also blinds one eye (both eyes on damage over full HP). Random attacks from behind hit the skull instead.",
+					"description": "失败值仅为1 的攻击视为击中躯干。颌、颊、鼻、耳，等等。忽略开放式头盔的DR。抵抗击倒的HT 检定-5，攻击大成功从头部致命攻击表查找结果。腐蚀伤害乘数改为×1.5，单次造成重伤还会致盲一只眼睛(超过最大HP 两只眼睛都会受伤)。从后方攻击视为对颅部造成的伤害。",
 					"calc": {
 						"roll_range": "5",
 						"dr": {
@@ -383,12 +383,12 @@
 				},
 				{
 					"id": "neck",
-					"choice_name": "Neck",
-					"table_name": "Neck",
+					"choice_name": "脖子",
+					"table_name": "脖子",
 					"slots": 1,
 					"hit_penalty": -5,
 					"dr_bonus": 0,
-					"description": "An attack that misses by 1 hits the torso instead. Neck and throat. Increase the wounding multiplier of crushing (cr) and corrosion (cor) attacks to x1½, and that of cutting (cut) damage to x2. At the GM’s option, anyone killed by a cutting (cut) blow to the neck is decapitated!",
+					"description": "颈、喉。钝击和腐蚀伤害的伤害乘数改为×1.5，切割伤害乘数改为×2。GM 可以认为被切割伤害击中脖子杀死的人死于斩首！",
 					"calc": {
 						"roll_range": "6",
 						"dr": {
@@ -398,12 +398,12 @@
 				},
 				{
 					"id": "leg",
-					"choice_name": "Leg",
-					"table_name": "Foreleg",
+					"choice_name": "腿",
+					"table_name": "前腿",
 					"slots": 2,
 					"hit_penalty": -2,
 					"dr_bonus": 0,
-					"description": "Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ½ HP from one blow) cripples the limb. Damage beyond that threshold is lost.",
+					"description": "肢体。贯通+、贯通++、刺穿伤害乘数改为1，任何重伤(单次失去超过1/2 HP)将致残肢体，但超过一半HP的伤害值将丢失。",
 					"calc": {
 						"roll_range": "7-8",
 						"dr": {
@@ -413,8 +413,8 @@
 				},
 				{
 					"id": "torso",
-					"choice_name": "Torso",
-					"table_name": "Torso",
+					"choice_name": "躯干",
+					"table_name": "躯干",
 					"slots": 3,
 					"hit_penalty": 0,
 					"dr_bonus": 0,
@@ -428,12 +428,12 @@
 				},
 				{
 					"id": "groin",
-					"choice_name": "Groin",
-					"table_name": "Groin",
+					"choice_name": "胯下",
+					"table_name": "胯下",
 					"slots": 1,
 					"hit_penalty": -3,
 					"dr_bonus": 0,
-					"description": "An attack that misses by 1 hits the torso instead. Human males and the males of similar species suffer double shock from crushing (cr) damage, and get -5 to knockdown rolls. Otherwise, treat as a torso hit.",
+					"description": "失败值仅为1的攻击视为击中躯干。对男性类人生物此部位的钝击攻击造成双倍休克，抵抗击倒的HT 检定-5。其他情况视为击中躯干。",
 					"calc": {
 						"roll_range": "12",
 						"dr": {
@@ -443,12 +443,12 @@
 				},
 				{
 					"id": "leg",
-					"choice_name": "Leg",
-					"table_name": "Hindleg",
+					"choice_name": "腿",
+					"table_name": "后腿",
 					"slots": 2,
 					"hit_penalty": -2,
 					"dr_bonus": 0,
-					"description": "Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ½ HP from one blow) cripples the limb. Damage beyond that threshold is lost.",
+					"description": "肢体。贯通+、贯通++、刺穿伤害乘数改为1，任何重伤(单次失去超过1/2 HP)将致残肢体，但超过一半HP的伤害值将丢失。",
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
@@ -458,12 +458,12 @@
 				},
 				{
 					"id": "foot",
-					"choice_name": "Foot",
-					"table_name": "Foot",
+					"choice_name": "脚",
+					"table_name": "脚",
 					"slots": 2,
 					"hit_penalty": -4,
 					"dr_bonus": 0,
-					"description": "Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ⅓ HP from one blow) cripples the extremity. Damage beyond that threshold is lost.",
+					"description": "肢体。贯通+、贯通++、刺穿伤害乘数改为1，任何重伤(单次失去超过⅓HP)将致残肢体，但超过⅓HP的伤害值将丢失。",
 					"calc": {
 						"roll_range": "15-16",
 						"dr": {
@@ -473,12 +473,12 @@
 				},
 				{
 					"id": "tail",
-					"choice_name": "Tail",
-					"table_name": "Tail",
+					"choice_name": "尾巴",
+					"table_name": "尾巴",
 					"slots": 2,
 					"hit_penalty": -3,
 					"dr_bonus": 0,
-					"description": "If a tail counts as an Extra Arm or a Striker, or is a fish tail, treat it as a limb (arm, leg) for crippling purposes; otherwise, treat it as an extremity (hand, foot). A crippled tail affects balance. For a ground creature, this gives -1 DX. For a swimmer or flyer, this gives -2 DX and halves Move. If the creature has no tail, or a very short one (like a rabbit), treat as torso.",
+					"description": "对于致残，一条尾巴如果可以认为是额外手臂或近战部位，或者是一条鱼尾，那就把它当作肢体( 手臂、腿)；否则，将其视为手脚( 手、脚)。致残的尾巴会影响平衡。对于地面生物，这是DX-1。对于游泳者或飞行者，DX-2同时移动减半。如果动物没有尾巴，或者尾巴非常短(比如兔子)，就把它当作“躯干”。",
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
@@ -488,12 +488,12 @@
 				},
 				{
 					"id": "vitals",
-					"choice_name": "Vitals",
-					"table_name": "Vitals",
+					"choice_name": "要害",
+					"table_name": "要害",
 					"slots": 0,
 					"hit_penalty": -3,
 					"dr_bonus": 0,
-					"description": "An attack that misses by 1 hits the torso instead. Heart, lungs, kidneys, etc. Increase the wounding modifier for an impaling (imp) or any piercing (pi-, pi, pi+, pi++) attack to x3. Increase the wounding modifier for a tight-beam burning (burn) attack to x2. Other attacks cannot target the vitals.",
+					"description": "失败值仅为1的攻击视为击中躯干。心、肺、肾等。穿刺和贯通伤害乘数改为×3，细光束灼烧伤害乘数改为×2。其他伤害类型无法选择攻击此部位。",
 					"calc": {
 						"roll_range": "-",
 						"dr": {
@@ -652,7 +652,7 @@
 						"type": "cut",
 						"st": "thr"
 					},
-					"usage": "Kick",
+					"usage": "踢踹",
 					"reach": "C,1",
 					"parry": "No",
 					"block": "No",
@@ -669,12 +669,12 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling",
+							"name": "斗殴",
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Karate",
+							"name": "空手技击",
 							"modifier": -2
 						}
 					]
@@ -685,13 +685,13 @@
 				"points": 5
 			},
 			"categories": [
-				"Advantage"
+				"优势"
 			]
 		},
 		{
 			"type": "advantage",
 			"id": "7af0b336-0d51-41af-a28d-a3bd42ad8aaf",
-			"name": "Damage Resistance",
+			"name": "伤害减免",
 			"physical": true,
 			"exotic": true,
 			"levels": "1",
@@ -701,7 +701,7 @@
 					"type": "modifier",
 					"id": "486280c0-77c5-42e9-941e-b52f09b2c751",
 					"disabled": true,
-					"name": "Force Field",
+					"name": "力场护盾",
 					"reference": "B47",
 					"cost_type": "percentage",
 					"cost": 20,
@@ -711,7 +711,7 @@
 					"type": "modifier",
 					"id": "e4ac59cd-b9fd-4187-9770-532caebf0e23",
 					"disabled": true,
-					"name": "Hardened",
+					"name": "硬化",
 					"reference": "B47",
 					"cost_type": "percentage",
 					"cost": 20,
@@ -722,40 +722,40 @@
 					"type": "modifier",
 					"id": "b94954a5-0428-491e-b4de-625fe1d89f7e",
 					"disabled": true,
-					"name": "Absorption",
+					"name": "吸收",
 					"reference": "B46",
 					"cost_type": "percentage",
 					"cost": 80,
 					"affects": "total",
-					"notes": "Enhances @Trait@"
+					"notes": "加强@特征@"
 				},
 				{
 					"type": "modifier",
 					"id": "3684268e-62d3-4b02-a612-707842271c23",
 					"disabled": true,
-					"name": "Absorption",
+					"name": "吸收",
 					"reference": "B46",
 					"cost_type": "percentage",
 					"cost": 80,
 					"affects": "total",
-					"notes": "Healing only"
+					"notes": "只能治疗"
 				},
 				{
 					"type": "modifier",
 					"id": "aa25f5bd-30c1-497f-9655-6369d5facba1",
 					"disabled": true,
-					"name": "Absorption",
+					"name": "吸收",
 					"reference": "B46",
 					"cost_type": "percentage",
 					"cost": 100,
 					"affects": "total",
-					"notes": "Enhances any trait"
+					"notes": "加强任何特征"
 				},
 				{
 					"type": "modifier",
 					"id": "24ceeb91-a5be-47d9-a8f5-c165f1f5a760",
 					"disabled": true,
-					"name": "Reflection",
+					"name": "反弹",
 					"reference": "B47",
 					"cost_type": "percentage",
 					"cost": 100,
@@ -765,62 +765,62 @@
 					"type": "modifier",
 					"id": "66a030b3-a345-419b-85d5-a7e95404a67e",
 					"disabled": true,
-					"name": "Bane",
+					"name": "祸根",
 					"reference": "H14",
 					"cost_type": "points",
 					"cost": -1,
 					"affects": "total",
-					"notes": "@Rare@"
+					"notes": "@稀有@"
 				},
 				{
 					"type": "modifier",
 					"id": "d0f14d82-c454-4866-8eec-1d48f890e539",
 					"disabled": true,
-					"name": "Bane",
+					"name": "祸根",
 					"reference": "H14",
 					"cost_type": "percentage",
 					"cost": -5,
 					"affects": "total",
-					"notes": "@Occasional@"
+					"notes": "@偶见@"
 				},
 				{
 					"type": "modifier",
 					"id": "4a2aee59-d30a-429d-9a3a-e589931ce233",
 					"disabled": true,
-					"name": "Bane",
+					"name": "祸根",
 					"reference": "H14",
 					"cost_type": "percentage",
 					"cost": -10,
 					"affects": "total",
-					"notes": "@Common@"
+					"notes": "@常见@"
 				},
 				{
 					"type": "modifier",
 					"id": "748045a7-eea6-484f-9a6f-f269619e142a",
 					"disabled": true,
-					"name": "Bane",
+					"name": "祸根",
 					"reference": "H14",
 					"cost_type": "percentage",
 					"cost": -15,
 					"affects": "total",
-					"notes": "@Very Common@"
+					"notes": "@非常常见@"
 				},
 				{
 					"type": "modifier",
 					"id": "213dc79c-6fc1-42cd-9c8c-04f129fc18d1",
 					"disabled": true,
-					"name": "Directional",
+					"name": "定向",
 					"reference": "B47",
 					"cost_type": "percentage",
 					"cost": -20,
 					"affects": "total",
-					"notes": "Front"
+					"notes": "前方"
 				},
 				{
 					"type": "modifier",
 					"id": "2ce333a2-814f-4846-90ec-a5c15aa62d28",
 					"disabled": true,
-					"name": "Flexible",
+					"name": "柔软",
 					"reference": "B47",
 					"cost_type": "percentage",
 					"cost": -20,
@@ -830,18 +830,18 @@
 					"type": "modifier",
 					"id": "909efbeb-6df6-4e7b-8b42-fcb7f86ff2bb",
 					"disabled": true,
-					"name": "Limited",
+					"name": "有限伤害类型",
 					"reference": "B46",
 					"cost_type": "percentage",
 					"cost": -20,
 					"affects": "total",
-					"notes": "@Very Common Attack Form@"
+					"notes": "@非常常见攻击形式@"
 				},
 				{
 					"type": "modifier",
 					"id": "cea840b6-38bf-4c3e-b498-2e98c4931eea",
 					"disabled": true,
-					"name": "Semi-Ablative",
+					"name": "半剥离",
 					"reference": "B47",
 					"cost_type": "percentage",
 					"cost": -20,
@@ -851,7 +851,7 @@
 					"type": "modifier",
 					"id": "c3b36b6e-69c7-4966-b959-c0503be63a80",
 					"disabled": true,
-					"name": "Can't wear armor",
+					"name": "无法穿着护甲",
 					"reference": "B47",
 					"cost_type": "percentage",
 					"cost": -40,
@@ -861,49 +861,49 @@
 					"type": "modifier",
 					"id": "0c305de8-9d1b-4813-ba78-e5c25f076154",
 					"disabled": true,
-					"name": "Directional",
+					"name": "定向",
 					"reference": "B47",
 					"cost_type": "percentage",
 					"cost": -40,
 					"affects": "total",
-					"notes": "@Direction: Back, Right, Left, Top or Underside@"
+					"notes": "@方向：后方，右，左，上或下@"
 				},
 				{
 					"type": "modifier",
 					"id": "41293f94-8fc2-4daf-ad63-3605c743d1a5",
 					"disabled": true,
-					"name": "Limited",
+					"name": "有限伤害类型",
 					"reference": "B46",
 					"cost_type": "percentage",
 					"cost": -40,
 					"affects": "total",
-					"notes": "@Common Attack Form@"
+					"notes": "@常见攻击形式@"
 				},
 				{
 					"type": "modifier",
 					"id": "1ec81f4b-6a49-49b0-b31a-7eabb6465249",
-					"name": "Tough Skin",
+					"name": "硬皮",
 					"cost_type": "percentage",
 					"cost": -40,
 					"affects": "total",
-					"notes": "Effects that just require skin contact or a scratch ignore this DR"
+					"notes": "任何仅需要接触皮肤或擦伤就可起效的效果忽略此DR"
 				},
 				{
 					"type": "modifier",
 					"id": "96a6ff89-9967-46b2-9856-66d47df9212f",
 					"disabled": true,
-					"name": "Limited",
+					"name": "有限伤害类型",
 					"reference": "B46",
 					"cost_type": "percentage",
 					"cost": -60,
 					"affects": "total",
-					"notes": "@Occasional Attack Form@"
+					"notes": "@偶见攻击形式@"
 				},
 				{
 					"type": "modifier",
 					"id": "422731d7-21e7-43a5-a881-403d5f100a9b",
 					"disabled": true,
-					"name": "Ablative",
+					"name": "剥离",
 					"reference": "B47",
 					"cost_type": "percentage",
 					"cost": -80,
@@ -913,12 +913,12 @@
 					"type": "modifier",
 					"id": "0c06fff7-46ba-4665-814a-5c4bebbdfa9a",
 					"disabled": true,
-					"name": "Limited",
+					"name": "有限伤害类型",
 					"reference": "B46",
 					"cost_type": "percentage",
 					"cost": -80,
 					"affects": "total",
-					"notes": "@Rare Attack Form@"
+					"notes": "@稀有攻击形式@"
 				},
 				{
 					"type": "modifier",
@@ -1042,7 +1042,7 @@
 				}
 			],
 			"categories": [
-				"Advantage"
+				"优势"
 			]
 		},
 		{
@@ -1057,13 +1057,13 @@
 			},
 			"notes": "Your chances of getting a raise or promotion in any job are halved. If you are self-employed, halve your monthly pay.",
 			"categories": [
-				"Disadvantage"
+				"劣势"
 			]
 		},
 		{
 			"type": "advantage_container",
 			"id": "c12bc55c-4be7-4305-b695-301c9e140118",
-			"name": "Meta-Trait: Quadruped",
+			"name": "超特质：四足生物",
 			"reference": "B263",
 			"calc": {
 				"points": -35
@@ -1073,7 +1073,7 @@
 				{
 					"type": "advantage",
 					"id": "7050f1c1-fcf1-467a-a65b-0f32b14d92e5",
-					"name": "Extra Legs",
+					"name": "额外腿部",
 					"physical": true,
 					"exotic": true,
 					"modifiers": [
@@ -1090,7 +1090,7 @@
 							"type": "modifier",
 							"id": "1df1c9ab-3d4b-445d-967b-e0b24817a0d5",
 							"disabled": true,
-							"name": "@5 or 6@",
+							"name": "@5 或 6@",
 							"reference": "B55",
 							"cost_type": "points",
 							"cost": 10,
@@ -1110,7 +1110,7 @@
 							"type": "modifier",
 							"id": "1d03474a-e474-44c1-8f7f-4a8d88e9f588",
 							"disabled": true,
-							"name": "Long",
+							"name": "长",
 							"reference": "B55",
 							"cost_type": "percentage",
 							"cost": 100,
@@ -1121,7 +1121,7 @@
 							"type": "modifier",
 							"id": "7f419dc6-e166-4e56-8921-e6f9283361f2",
 							"disabled": true,
-							"name": "Cannot Kick",
+							"name": "不能踢击",
 							"reference": "B55",
 							"cost_type": "percentage",
 							"cost": -50,
@@ -1131,7 +1131,7 @@
 							"type": "modifier",
 							"id": "013bd93b-7d7f-4cd1-a004-b05a93093750",
 							"disabled": true,
-							"name": "Extra Flexible",
+							"name": "更加柔软",
 							"reference": "MATG27",
 							"cost_type": "percentage",
 							"cost": 50,
@@ -1153,13 +1153,13 @@
 						"points": 5
 					},
 					"categories": [
-						"Advantage"
+						"优势"
 					]
 				},
 				{
 					"type": "advantage",
 					"id": "04ecbe99-07a0-45cf-af75-18124cbacd2c",
-					"name": "Horizontal",
+					"name": "非直立",
 					"physical": true,
 					"exotic": true,
 					"base_points": -10,
@@ -1168,13 +1168,13 @@
 						"points": -10
 					},
 					"categories": [
-						"Disadvantage"
+						"劣势"
 					]
 				},
 				{
 					"type": "advantage",
 					"id": "d060e2f8-f36f-4b97-9fd6-d9a9a2adc973",
-					"name": "No Fine Manipulators",
+					"name": "无操作肢",
 					"physical": true,
 					"base_points": -30,
 					"reference": "B145",
@@ -1194,7 +1194,7 @@
 						}
 					],
 					"categories": [
-						"Disadvantage"
+						"劣势"
 					]
 				}
 			]
@@ -1202,7 +1202,7 @@
 		{
 			"type": "advantage_container",
 			"id": "ba0bd09e-c485-4a7e-b014-5ced58372f71",
-			"name": "Meta-Trait: Wild Animal",
+			"name": "超特质：野生动物",
 			"reference": "B263",
 			"calc": {
 				"points": -30
@@ -1212,7 +1212,7 @@
 				{
 					"type": "advantage",
 					"id": "62508685-ea91-45cb-8304-1bcdf012e42c",
-					"name": "Bestial",
+					"name": "兽性",
 					"mental": true,
 					"exotic": true,
 					"base_points": -10,
@@ -1221,13 +1221,13 @@
 						"points": -10
 					},
 					"categories": [
-						"Disadvantage"
+						"劣势"
 					]
 				},
 				{
 					"type": "advantage",
 					"id": "87154cbe-05de-4fda-9047-a09fe455d9db",
-					"name": "Cannot Speak",
+					"name": "无法交谈",
 					"physical": true,
 					"base_points": -15,
 					"reference": "B125",
@@ -1243,34 +1243,34 @@
 								"has": false,
 								"name": {
 									"compare": "is",
-									"qualifier": "stuttering"
+									"qualifier": "口齿不清"
 								}
 							}
 						]
 					},
 					"categories": [
-						"Disadvantage"
+						"劣势"
 					]
 				},
 				{
 					"type": "advantage",
 					"id": "5c83e59c-e584-44fb-a46c-5b1e2d596219",
-					"name": "Hidebound",
+					"name": "思想僵化",
 					"mental": true,
 					"base_points": -5,
 					"reference": "B138",
 					"calc": {
 						"points": -5
 					},
-					"notes": "-2 penalty on any task that requires creativity or invention, including most rolls against Artist skill, all Engineer rolls for new inventions, and all skill rolls made to use the Gadgeteer advantage.",
+					"notes": "你在需要创造力或发明精神的事务的检定上有-2 减值，包括大多数艺术创作技能检定，所有用来发明的工程学技能检定，以及使用发明奇才优势的所有技能检定。",
 					"categories": [
-						"Disadvantage"
+						"劣势"
 					]
 				},
 				{
 					"type": "advantage",
 					"id": "46b7d204-361f-4a6e-94a1-b598dd31aaff",
-					"name": "Taboo Trait (Fixed IQ)",
+					"name": "禁用特质 (固定IQ)",
 					"physical": true,
 					"reference": "B263",
 					"calc": {
@@ -1282,7 +1282,7 @@
 		{
 			"type": "advantage",
 			"id": "01f7b3e4-1c49-4ac1-84db-40f970f151af",
-			"name": "Night Vision",
+			"name": "夜视",
 			"physical": true,
 			"levels": "5",
 			"points_per_level": 1,
@@ -1291,13 +1291,13 @@
 				"points": 5
 			},
 			"categories": [
-				"Advantage"
+				"优势"
 			]
 		},
 		{
 			"type": "advantage",
 			"id": "c7dcc460-fcf2-43c6-ab73-dc97164914c9",
-			"name": "Teeth, Sharp",
+			"name": "利齿",
 			"physical": true,
 			"exotic": true,
 			"base_points": 1,
@@ -1309,7 +1309,7 @@
 						"st": "thr",
 						"base": "-1"
 					},
-					"usage": "Bite",
+					"usage": "啮咬",
 					"reach": "C",
 					"parry": "No",
 					"block": "No",
@@ -1322,7 +1322,7 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": "斗殴"
 						},
 						{
 							"type": "dx"
@@ -1341,7 +1341,7 @@
 		{
 			"type": "advantage",
 			"id": "4610df14-2dd4-468e-9fb0-df78200bc77c",
-			"name": "Temperature Tolerance",
+			"name": "超温耐受",
 			"physical": true,
 			"levels": "1",
 			"points_per_level": 1,
@@ -1350,7 +1350,7 @@
 				"points": 1
 			},
 			"categories": [
-				"Advantage"
+				"优势"
 			]
 		}
 	],
@@ -1358,7 +1358,7 @@
 		{
 			"type": "skill",
 			"id": "aebfb146-4001-4b41-b1b1-536be00c2df0",
-			"name": "Brawling",
+			"name": "斗殴",
 			"reference": "B182",
 			"difficulty": "dx/e",
 			"points": 4,
@@ -1374,7 +1374,7 @@
 					"selection_type": "weapons_with_required_skill",
 					"name": {
 						"compare": "is",
-						"qualifier": "Brawling"
+						"qualifier": "斗殴"
 					},
 					"level": {
 						"compare": "at_least",
@@ -1383,8 +1383,8 @@
 				}
 			],
 			"categories": [
-				"Combat/Weapon",
-				"Melee Combat"
+				"战斗/武器",
+				"近战战斗"
 			]
 		},
 		{
@@ -1412,7 +1412,7 @@
 				}
 			],
 			"categories": [
-				"Athletic"
+				"运动"
 			]
 		}
 	],
