@@ -7,7 +7,7 @@
 			"type": "advantage_container",
 			"id": "617e4769-153a-457b-9bf6-33cd0c1ab724",
 			"container_type": "meta_trait",
-			"name": "Meta-Trait: Wild Animal",
+			"name": "元特质：Wild Animal",
 			"reference": "B263",
 			"calc": {
 				"points": -30

@@ -7,7 +7,7 @@
 			"type": "advantage_container",
 			"id": "e2808b7f-953c-43ce-a825-731c23726506",
 			"container_type": "meta_trait",
-			"name": "Meta-Trait: Body of Water",
+			"name": "元特质：Body of Water",
 			"reference": "B262",
 			"calc": {
 				"points": 170

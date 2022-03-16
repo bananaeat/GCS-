@@ -7,7 +7,7 @@
 			"type": "advantage_container",
 			"id": "29122d8c-be5f-4168-8149-d87769e15eaa",
 			"container_type": "meta_trait",
-			"name": "Meta-Trait: Domestic Animal",
+			"name": "元特质：Domestic Animal",
 			"reference": "B263",
 			"calc": {
 				"points": -30

@@ -7,7 +7,7 @@
 			"type": "advantage_container",
 			"id": "c46c5510-3af0-4438-9e35-15bd75b1ec58",
 			"container_type": "meta_trait",
-			"name": "Meta-Trait: Artificial Intelligence",
+			"name": "元特质：人工智能",
 			"reference": "B263",
 			"calc": {
 				"points": 32
@@ -17,7 +17,7 @@
 				{
 					"type": "advantage",
 					"id": "d1d4efea-3acf-4669-bc53-e102a7d01726",
-					"name": "Absolute Timing",
+					"name": "绝对时感",
 					"mental": true,
 					"base_points": 2,
 					"modifiers": [
@@ -25,7 +25,7 @@
 							"type": "modifier",
 							"id": "7c6198ac-c0c2-48c7-a955-3425e5dc35b0",
 							"disabled": true,
-							"name": "Chronolocation",
+							"name": "超时空定位",
 							"cost_type": "points",
 							"cost": 3,
 							"affects": "total"
@@ -42,7 +42,7 @@
 				{
 					"type": "advantage",
 					"id": "ffd60154-36e7-4198-95df-633a51552025",
-					"name": "Digital Mind",
+					"name": "数字化心智",
 					"physical": true,
 					"exotic": true,
 					"base_points": 5,
@@ -57,7 +57,7 @@
 				{
 					"type": "advantage",
 					"id": "ef8c4996-e8cb-4b77-9784-400d79757a92",
-					"name": "Doesn't Sleep",
+					"name": "无需睡眠",
 					"physical": true,
 					"exotic": true,
 					"base_points": 20,
@@ -72,14 +72,14 @@
 				{
 					"type": "advantage",
 					"id": "35674443-2cd5-4cdd-b687-996620626962",
-					"name": "Eidetic Memory",
+					"name": "逼真记忆",
 					"mental": true,
 					"base_points": 5,
 					"modifiers": [
 						{
 							"type": "modifier",
 							"id": "0f54af00-8641-475f-93e7-b6fa26373acc",
-							"name": "Photographic",
+							"name": "摄影式记忆",
 							"reference": "B51",
 							"cost_type": "points",
 							"cost": 5,
@@ -97,14 +97,14 @@
 				{
 					"type": "advantage",
 					"id": "369cda23-9515-4320-b609-c7c477e558dd",
-					"name": "Lightning Calculator",
+					"name": "闪电计算者2",
 					"mental": true,
 					"base_points": 2,
 					"modifiers": [
 						{
 							"type": "modifier",
 							"id": "f3fe3525-ea4d-4e88-841f-44be938f194c",
-							"name": "Intuitive Mathematician",
+							"name": "直觉数学家",
 							"reference": "B66",
 							"cost_type": "points",
 							"cost": 3,
@@ -122,7 +122,7 @@
 				{
 					"type": "advantage",
 					"id": "8e045384-e341-4ac7-8a87-07202a986c92",
-					"name": "Reprogrammable",
+					"name": "服从指令",
 					"mental": true,
 					"exotic": true,
 					"base_points": -10,

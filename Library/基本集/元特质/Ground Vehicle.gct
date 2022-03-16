@@ -7,7 +7,7 @@
 			"type": "advantage_container",
 			"id": "90ed8a08-a7eb-4164-bf93-cfb62935e2c7",
 			"container_type": "meta_trait",
-			"name": "Meta-Trait: Ground Vehicle",
+			"name": "元特质：Ground Vehicle",
 			"reference": "B263",
 			"calc": {
 				"points": -100
