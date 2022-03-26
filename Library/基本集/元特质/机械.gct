@@ -1,0 +1,259 @@
+{
+	"type": "template",
+	"version": 2,
+	"id": "2d65ab3f-a0ed-46ba-878b-d7056d4a37bf",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"id": "cffdd470-16f5-4d72-877f-0c3f4cbaec38",
+			"container_type": "meta_trait",
+			"name": "元特质：机械",
+			"reference": "B263",
+			"calc": {
+				"points": 25
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"id": "096d435b-9e96-49cb-a7da-4440907d3acf",
+					"name": "八小时能量储存装置，需要一天三次补充燃料",
+					"physical": true,
+					"reference": "B263",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"type": "advantage",
+					"id": "54711749-8179-49c1-9de1-9878971cb175",
+					"name": "伤害耐受",
+					"physical": true,
+					"exotic": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "018f3381-402e-4814-8163-b1cd9ed9720a",
+							"disabled": true,
+							"name": "弥散",
+							"reference": "B60",
+							"cost_type": "points",
+							"cost": 100,
+							"affects": "total",
+							"notes": "你能够免疫致残损伤，并且减少你承受的来自大部分物理打击的伤害。"
+						},
+						{
+							"type": "modifier",
+							"id": "f5afc3dd-3d78-4ff6-98d5-c733ff1fc7cf",
+							"disabled": true,
+							"name": "均质",
+							"reference": "B60",
+							"cost_type": "points",
+							"cost": 40,
+							"affects": "total",
+							"notes": "变更了伤害乘数：imp & pi++ 是 x1/2，pi+ 是 x1/3，pi 是 x1/5，pi- 是 x1/10"
+						},
+						{
+							"type": "modifier",
+							"id": "24e73644-b614-48e2-aa91-c54b3123a678",
+							"name": "无血",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"notes": "不会流血(参见损伤的可选规则)，不会被血源性毒物影响，并且对任何通过切断你身体部分血液供应造成伤害的攻击免疫。"
+						},
+						{
+							"type": "modifier",
+							"id": "2b984d2c-dbfb-42e0-93ef-d3632b237519",
+							"disabled": true,
+							"name": "无脑",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"notes": "你的对手不能以瞄准脑部造成额外伤害。你可以拥有头部，但对颅脑或眼睛造成的打击等同于打在脸上(除非此打击可以直接瘫痪你的眼部)。"
+						},
+						{
+							"type": "modifier",
+							"id": "48e95100-c702-44d6-8ef2-b9e5909936d4",
+							"disabled": true,
+							"name": "无眼",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"notes": "因为你没有眼睛，对手不能攻击此部位，你也对致盲攻击免疫。"
+						},
+						{
+							"type": "modifier",
+							"id": "d6be358b-4487-4982-b77a-a883f1b0f42e",
+							"disabled": true,
+							"name": "无头",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 7,
+							"affects": "total",
+							"notes": "你没有“颅脑”与“脸部”作为攻击目标"
+						},
+						{
+							"type": "modifier",
+							"id": "45404fbe-2d81-4aad-a91c-53fd9a3dd309",
+							"disabled": true,
+							"name": "无颈",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"notes": "你的脖子不能够作为打击的目标。你也不能被斩首，掐脖子窒息或绞杀。"
+						},
+						{
+							"type": "modifier",
+							"id": "44eac5d1-0ee4-4b20-a007-d6055020e316",
+							"disabled": true,
+							"name": "无要害",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"notes": "对“要害”或“胯下”的攻击视为对躯干的攻击。"
+						},
+						{
+							"type": "modifier",
+							"id": "4c03b5bf-6f5e-43dc-8a41-fec1a01e08fb",
+							"name": "无生命",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 20,
+							"affects": "total",
+							"notes": "变更的伤害调整值：imp & pi++ 是 x1, pi+ 是 x1/2, pi 是 x1/3, pi- 是 x1/5"
+						}
+					],
+					"reference": "B60",
+					"calc": {
+						"points": 25
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "6472f4b5-bcbb-4616-b40d-463f2469eb5a",
+					"name": "无FP，不消耗FP",
+					"physical": true,
+					"reference": "B263",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"type": "advantage",
+					"id": "c0923f17-7dbb-4dd5-8ea7-467be2a76256",
+					"round_down": true,
+					"name": "抵抗力",
+					"physical": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "b57f180a-0518-40a3-8743-299218f5bba0",
+							"name": "免疫新陈代谢危险",
+							"reference": "B80",
+							"cost_type": "points",
+							"cost": 30,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "9f42ff9e-d797-4d76-8d90-701f8aa6f77d",
+							"disabled": true,
+							"name": "@常见：毒药，病症等@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "2954387c-2f7a-42a0-bcf8-30b0225c93c2",
+							"disabled": true,
+							"name": "@偶尔：疾病，摄入的毒药等@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "68bc7cbc-4499-4db6-a337-7986d2733919",
+							"disabled": true,
+							"name": "@罕见：加速度(极端G力造成的黑视)，高原反应，潜水病(减压病)，晕船，或是太空病。@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "27f0bdb9-41b5-4d7d-896a-2ed3812a6120",
+							"name": "完全免疫",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"id": "8f529f15-b053-488f-adbd-056b27dd19f8",
+							"disabled": true,
+							"name": "抵抗的HT检定+8",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 0.5
+						},
+						{
+							"type": "modifier",
+							"id": "22d5260f-26e4-4d89-b5ad-80b2620634c2",
+							"disabled": true,
+							"name": "抵抗的HT检定+3",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 0.33
+						}
+					],
+					"reference": "B81",
+					"calc": {
+						"points": 30
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "4b78bb8b-3dd9-45cc-93b5-d320651a4ae8",
+					"name": "完全无法治愈",
+					"physical": true,
+					"exotic": true,
+					"base_points": -30,
+					"reference": "B160",
+					"calc": {
+						"points": -30
+					},
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "08bb57a4-2e87-4a67-9f3a-2dc6a0e26e5c",
+					"name": "躯体不会衰老",
+					"physical": true,
+					"reference": "B263",
+					"calc": {
+						"points": 0
+					}
+				}
+			]
+		}
+	]
+}
