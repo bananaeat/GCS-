@@ -1,0 +1,90 @@
+{
+	"type": "template",
+	"version": 2,
+	"id": "038c6d7b-2022-4c72-b344-65fbf56975a2",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"id": "90ed8a08-a7eb-4164-bf93-cfb62935e2c7",
+			"container_type": "meta_trait",
+			"name": "元特质：陆地车辆",
+			"reference": "B263",
+			"calc": {
+				"points": -100
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"id": "39b57ce4-e096-4881-b125-d2f2a5874a62",
+					"name": "非直立",
+					"physical": true,
+					"exotic": true,
+					"base_points": -10,
+					"reference": "B139",
+					"calc": {
+						"points": -10
+					},
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "73d171c6-a9a5-423e-834f-27bdb78fac5b",
+					"name": "无腿(车轮或履带)",
+					"physical": true,
+					"exotic": true,
+					"base_points": -20,
+					"reference": "B145",
+					"calc": {
+						"points": -20
+					},
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "b0c74d62-0068-42a1-9f25-5b5296766221",
+					"name": "无肢",
+					"physical": true,
+					"base_points": -50,
+					"reference": "B145",
+					"calc": {
+						"points": -50
+					},
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 40
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 40
+						}
+					],
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "5c06659a-4e7b-45a1-a8cd-f271990a6772",
+					"name": "触觉丧失",
+					"physical": true,
+					"base_points": -20,
+					"reference": "B146",
+					"calc": {
+						"points": -20
+					},
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		}
+	]
+}

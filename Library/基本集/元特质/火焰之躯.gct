@@ -114,18 +114,18 @@
 					"type": "modifier",
 					"id": "419ab96d-ea87-4894-b6d8-a6ee32a5d416",
 					"disabled": true,
-					"name": "诅咒",
+					"name": "祸根",
 					"reference": "H14",
 					"cost_type": "points",
 					"cost": -1,
 					"affects": "total",
-					"notes": "@Rare@"
+					"notes": "@罕见@"
 				},
 				{
 					"type": "modifier",
 					"id": "a8c6d43d-430e-4773-a64c-200f75009e65",
 					"disabled": true,
-					"name": "诅咒",
+					"name": "祸根",
 					"reference": "H14",
 					"cost_type": "percentage",
 					"cost": -5,
@@ -136,7 +136,7 @@
 					"type": "modifier",
 					"id": "e9503abd-7621-42c4-8ced-3981ec7c6d9a",
 					"disabled": true,
-					"name": "诅咒",
+					"name": "祸根",
 					"reference": "H14",
 					"cost_type": "percentage",
 					"cost": -10,
@@ -147,7 +147,7 @@
 					"type": "modifier",
 					"id": "1585a884-94e2-4152-b7b7-d3b6cc253c58",
 					"disabled": true,
-					"name": "诅咒",
+					"name": "祸根",
 					"reference": "H14",
 					"cost_type": "percentage",
 					"cost": -15,
@@ -179,7 +179,7 @@
 					"type": "modifier",
 					"id": "d9e01c00-3ac2-4f4d-ae5f-45b34441df13",
 					"disabled": true,
-					"name": "限制",
+					"name": "有限伤害类型",
 					"reference": "B46",
 					"cost_type": "percentage",
 					"cost": -20,
@@ -220,7 +220,7 @@
 				{
 					"type": "modifier",
 					"id": "34ffce90-cba0-4d1a-a8ce-b3e6b12a51e3",
-					"name": "限制",
+					"name": "有限伤害类型",
 					"reference": "B46",
 					"cost_type": "percentage",
 					"cost": -40,
@@ -241,7 +241,7 @@
 					"type": "modifier",
 					"id": "db046fce-bac2-4fae-98d4-ee66925c0e9e",
 					"disabled": true,
-					"name": "限制",
+					"name": "有限伤害类型",
 					"reference": "B46",
 					"cost_type": "percentage",
 					"cost": -60,
@@ -262,7 +262,7 @@
 					"type": "modifier",
 					"id": "3b761122-5da1-46dd-992c-2f9df40890cb",
 					"disabled": true,
-					"name": "限制",
+					"name": "有限伤害类型",
 					"reference": "B46",
 					"cost_type": "percentage",
 					"cost": -80,
@@ -1146,98 +1146,107 @@
 			]
 		},
 		{
-			"type": "advantage",
-			"id": "8c0a6469-1b7b-49b1-879a-e50aa2bb9494",
-			"name": "易伤",
-			"physical": true,
-			"exotic": true,
-			"modifiers": [
-				{
-					"type": "modifier",
-					"id": "da840630-abbc-426e-a9e3-f7cd34ab0956",
-					"disabled": true,
-					"name": "@稀有攻击@",
+					"type": "advantage",
+					"id": "a4cc7797-d0a3-4e1d-8ad7-3dfa83ae263c",
+					"name": "弱点",
+					"physical": true,
+					"exotic": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "fb027256-a3e2-4ef6-a93d-ae99e91742bb",
+							"name": "每分钟1D伤害",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "8f8584cf-51ad-4acd-8f95-73e7d8f6a351",
+							"disabled": true,
+							"name": "每5分钟1D伤害",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "9aa3280e-4169-4d00-a088-283cb543b783",
+							"disabled": true,
+							"name": "每30分钟1D伤害",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "a0de868d-18e5-4b20-950f-034f7ad872de",
+							"disabled": true,
+							"name": "@罕见物质@",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 0.5
+						},
+						{
+							"type": "modifier",
+							"id": "503d1b16-ca91-4b85-aef3-c79d183aeafe",
+							"disabled": true,
+							"name": "@偶见物质@",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"id": "7e88dca9-2327-4dfc-9728-70a0ed6d8e20",
+							"name": "水",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 2
+						},
+						{
+							"type": "modifier",
+							"id": "7a1b92c2-44ba-4240-93c3-74146fb01a56",
+							"disabled": true,
+							"name": "@非常常见物质@",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 3
+						},
+						{
+							"type": "modifier",
+							"id": "6200ac90-a019-4d95-8224-5ecf04bf7694",
+							"disabled": true,
+							"name": "只削减体力",
+							"reference": "B161",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "d9de48b7-07b2-4710-a8f9-6a8f7ae6fd55",
+							"disabled": true,
+							"name": "可变",
+							"reference": "B161",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total"
+						}
+					],
 					"reference": "B161",
-					"cost_type": "points",
-					"cost": -5,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "c4f25bac-aec3-430a-b8e2-c5cc8ca62d3d",
-					"disabled": true,
-					"name": "@偶见攻击@",
-					"reference": "B161",
-					"cost_type": "points",
-					"cost": -10,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "b94356f2-bfcd-4b44-afcf-9491a86b2ff9",
-					"disabled": true,
-					"name": "@常见攻击@",
-					"reference": "B161",
-					"cost_type": "points",
-					"cost": -15,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "c6e65360-efaf-470b-8f12-7e1ae885cf7e",
-					"name": "水",
-					"reference": "B161",
-					"cost_type": "points",
-					"cost": -20,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "47f0d0dd-e3de-4212-9348-f73dd42804c6",
-					"disabled": true,
-					"name": "伤害x2",
-					"reference": "B161",
-					"cost_type": "multiplier",
-					"cost": 2
-				},
-				{
-					"type": "modifier",
-					"id": "7e490fc9-227f-4cab-86b7-6570ed3ec050",
-					"disabled": true,
-					"name": "伤害x3",
-					"reference": "B161",
-					"cost_type": "multiplier",
-					"cost": 3
-				},
-				{
-					"type": "modifier",
-					"id": "bcb496da-fb92-4f4a-a8bc-ade01ceacaa0",
-					"disabled": true,
-					"name": "伤害x4",
-					"reference": "B161",
-					"cost_type": "multiplier",
-					"cost": 4
-				},
-				{
-					"type": "modifier",
-					"id": "bac139dd-b536-4d88-aafa-fa927c454816",
-					"disabled": true,
-					"name": "只削减体力",
-					"reference": "B161",
-					"cost_type": "percentage",
-					"cost": -50,
-					"affects": "total"
+					"calc": {
+						"points": -40
+					},
+					"categories": [
+						"Disadvantage"
+					]
 				}
-			],
-			"reference": "B161",
-			"calc": {
-				"points": 0
-			},
-			"categories": [
-				"劣势"
-			]
-		}
 			]
 		}
 	]
 }
+

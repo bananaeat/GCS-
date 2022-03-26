@@ -1,0 +1,747 @@
+{
+	"type": "template",
+	"version": 2,
+	"id": "a2790dc2-af45-471b-ae6f-e834fdebe8ec",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"id": "3f6e8ae7-c9ce-423f-b081-50eff50bfdd5",
+			"container_type": "meta_trait",
+			"name": "元特质：Body of Stone",
+			"reference": "B262",
+			"calc": {
+				"points": 140
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"id": "ab637901-ebe4-45af-9897-bed0eda67916",
+					"name": "Damage Resistance",
+					"physical": true,
+					"exotic": true,
+					"levels": "5",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "bef615b2-31f1-4500-b952-e06e0691c3e4",
+							"disabled": true,
+							"name": "力场护盾",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "ce6ae9f7-4adf-4544-a48b-559a57215b77",
+							"disabled": true,
+							"name": "硬化",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total",
+							"levels": 1
+						},
+						{
+							"type": "modifier",
+							"id": "d1b33d00-31d1-4a91-a887-a847110f4d84",
+							"disabled": true,
+							"name": "吸收",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": 80,
+							"affects": "total",
+							"notes": "提高 @特质@"
+						},
+						{
+							"type": "modifier",
+							"id": "7ddfaa3a-683e-414b-8dad-3310fbd74bc1",
+							"disabled": true,
+							"name": "吸收",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": 80,
+							"affects": "total",
+							"notes": "只能治疗"
+						},
+						{
+							"type": "modifier",
+							"id": "065c344a-2e90-4ac7-b06f-9645108d0b0a",
+							"disabled": true,
+							"name": "吸收",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total",
+							"notes": "提高任何特质"
+						},
+						{
+							"type": "modifier",
+							"id": "f528ce55-6912-45b5-abae-ff6c06f88710",
+							"disabled": true,
+							"name": "反弹",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "2ad2e8f9-00c2-486d-938c-3204f2004791",
+							"disabled": true,
+							"name": "祸根",
+							"reference": "H14",
+							"cost_type": "points",
+							"cost": -1,
+							"affects": "total",
+							"notes": "@罕见@"
+						},
+						{
+							"type": "modifier",
+							"id": "6c71de6c-9d7a-4847-a66f-08f29b753243",
+							"disabled": true,
+							"name": "祸根",
+							"reference": "H14",
+							"cost_type": "percentage",
+							"cost": -5,
+							"affects": "total",
+							"notes": "@偶见@"
+						},
+						{
+							"type": "modifier",
+							"id": "43c2fd21-b3f8-495a-ac80-1678ed68d764",
+							"disabled": true,
+							"name": "祸根",
+							"reference": "H14",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total",
+							"notes": "@常见@"
+						},
+						{
+							"type": "modifier",
+							"id": "bd826450-580d-40d9-a3a3-51ef3009d0c0",
+							"disabled": true,
+							"name": "祸根",
+							"reference": "H14",
+							"cost_type": "percentage",
+							"cost": -15,
+							"affects": "total",
+							"notes": "@很常见@"
+						},
+						{
+							"type": "modifier",
+							"id": "3c424b2c-5721-4744-9baa-01e9d7dee637",
+							"disabled": true,
+							"name": "定向",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total",
+							"notes": "前方"
+						},
+						{
+							"type": "modifier",
+							"id": "581da6b3-a90a-4707-bbb9-2f422fe3a3f4",
+							"disabled": true,
+							"name": "柔软",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "89d37f3b-6e1b-4ea7-aaa7-61b0c6171910",
+							"disabled": true,
+							"name": "有限伤害类型",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total",
+							"notes": "@很常见的攻击形式@"
+						},
+						{
+							"type": "modifier",
+							"id": "64434cd0-dd36-4774-adff-72b984beb982",
+							"disabled": true,
+							"name": "半剥离",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "36e268aa-6e78-4aad-b7a8-18ce6a6e3263",
+							"disabled": true,
+							"name": "无法穿着护甲",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "dde17939-b512-4c8c-a322-de29181ca219",
+							"disabled": true,
+							"name": "定向",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total",
+							"notes": "@方向：后方，左方，右方，上方或者下方@"
+						},
+						{
+							"type": "modifier",
+							"id": "598145b8-6a0f-42ed-b107-9e3491f9e6b7",
+							"disabled": true,
+							"name": "有限伤害类型",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total",
+							"notes": "@常见的攻击形式@"
+						},
+						{
+							"type": "modifier",
+							"id": "760eb8a1-60a8-436e-9e3d-a0c5206a37d1",
+							"disabled": true,
+							"name": "硬皮",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total",
+							"notes": "任何需要接触皮肤的影响例如毒药、电击、点穴忽略此DR"
+						},
+						{
+							"type": "modifier",
+							"id": "7df42b01-bf29-4c8d-80f7-26583af9edd8",
+							"disabled": true,
+							"name": "有限伤害类型",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": -60,
+							"affects": "total",
+							"notes": "@偶见的攻击形式@"
+						},
+						{
+							"type": "modifier",
+							"id": "45419d6f-1bcd-4d01-8e58-c8c088adfd95",
+							"disabled": true,
+							"name": "剥离",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -80,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "673fb447-83b5-4566-bd78-ea661a867678",
+							"disabled": true,
+							"name": "有限伤害类型",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": -80,
+							"affects": "total",
+							"notes": "@罕见的攻击形式@"
+						},
+						{
+							"type": "modifier",
+							"id": "cb8263b4-c05a-40e8-97a5-534257c06100",
+							"disabled": true,
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost_type": "percentage",
+							"cost": 10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "87b9e35e-4ce6-4a33-80a0-038efcbb9056",
+							"disabled": true,
+							"name": "防咒术",
+							"reference": "PSI14",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "efabc77d-d142-4a56-b125-ed87b04beb0d",
+							"disabled": true,
+							"name": "仅防御咒术",
+							"reference": "PSI14",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total"
+						}
+					],
+					"reference": "B47",
+					"calc": {
+						"points": 15
+					},
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "头颅"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "脸部"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "脖子"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "躯干"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "要害"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "胯下"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "手臂"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "手"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "腿"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "脚"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "尾巴"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "翅膀"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "鳍"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "大脑"
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "c0c39489-b926-468e-9fad-957da6220e3f",
+					"name": "无需呼吸",
+					"physical": true,
+					"exotic": true,
+					"base_points": 20,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "c3350191-7687-43a6-822f-3b4b6fb51e75",
+							"disabled": true,
+							"name": "鳃",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "f24ab3cb-a347-4365-94ff-909640ef6385",
+							"disabled": true,
+							"name": "鳃",
+							"reference": "B49",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total",
+							"notes": "在空气中会像普通人类在水中那样快速窒息"
+						},
+						{
+							"type": "modifier",
+							"id": "06dc848d-606b-4bf0-b98f-12de72612eeb",
+							"disabled": true,
+							"name": "吸收氧气",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -25,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "4a57ccad-616b-4f69-99a9-88425c147057",
+							"disabled": true,
+							"name": "氧气储存",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total",
+							"notes": "你的“屏息”时间是通常情况的25倍"
+						},
+						{
+							"type": "modifier",
+							"id": "586e79f0-d820-4453-a1f7-afefc263161f",
+							"disabled": true,
+							"name": "氧气储存",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total",
+							"notes": "你的“屏息”时间是通常情况的50倍"
+						},
+						{
+							"type": "modifier",
+							"id": "a1c88d1e-982c-4d24-90f6-a54c69a44c98",
+							"disabled": true,
+							"name": "氧气储存",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -30,
+							"affects": "total",
+							"notes": "你的“屏息”时间是通常情况的100倍"
+						},
+						{
+							"type": "modifier",
+							"id": "c7b067bf-2c2e-4297-80f3-55af23373afb",
+							"disabled": true,
+							"name": "氧气储存",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total",
+							"notes": "你的“屏息”时间是通常情况的200倍"
+						},
+						{
+							"type": "modifier",
+							"id": "8411831d-24ab-4f21-a39b-afdfc39a025f",
+							"disabled": true,
+							"name": "氧气储存",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total",
+							"notes": "你的“屏息”时间是通常情况的300倍"
+						},
+						{
+							"type": "modifier",
+							"id": "e5c2dc72-c714-4ebe-ac64-bec93984e1a3",
+							"disabled": true,
+							"name": "燃烧氧气",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						}
+					],
+					"reference": "B49",
+					"calc": {
+						"points": 20
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "8d70e3ec-4ca5-4ce4-bb5a-ee9c9c8f1bd1",
+					"name": "脆弱 (易碎)",
+					"physical": true,
+					"exotic": true,
+					"base_points": -15,
+					"reference": "B136",
+					"calc": {
+						"points": -15
+					},
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "1b2b68f9-e372-4779-8a66-6e4d80f700da",
+					"name": "伤害耐受",
+					"physical": true,
+					"exotic": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "fa79898f-9bad-4aaf-951f-e539d3f984ab",
+							"disabled": true,
+							"name": "弥散",
+							"reference": "B60",
+							"cost_type": "points",
+							"cost": 100,
+							"affects": "total",
+							"notes": "你能够免疫致残损伤，并且减少你承受的来自大部分物理打击的伤害。"
+						},
+						{
+							"type": "modifier",
+							"id": "6b67c72b-a952-43bb-98de-31e3ad15fedb",
+							"name": "均质",
+							"reference": "B60",
+							"cost_type": "points",
+							"cost": 40,
+							"affects": "total",
+							"notes": "变更了伤害乘数：imp & pi++ 是 x1/2，pi+ 是 x1/3，pi 是 x1/5，pi- 是 x1/10"
+						},
+						{
+							"type": "modifier",
+							"id": "a50ca796-247c-4a73-a590-eae24d3edd48",
+							"name": "无血",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"notes": "不会流血(参见损伤的可选规则)，不会被血源性毒物影响，并且对任何通过切断你身体部分血液供应造成伤害的攻击免疫。"
+						},
+						{
+							"type": "modifier",
+							"id": "483b0f9c-9e24-4c57-9849-da406c9278be",
+							"disabled": true,
+							"name": "无脑",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"notes": "你的对手不能以瞄准脑部造成额外伤害。你可以拥有头部，但对颅脑或眼睛造成的打击等同于打在脸上(除非此打击可以直接瘫痪你的眼部)。"
+						},
+						{
+							"type": "modifier",
+							"id": "28020d42-89c1-4bec-a25b-a9b12ec1d2c6",
+							"disabled": true,
+							"name": "无眼",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"notes": "因为你没有眼睛，对手不能攻击此部位，你也对致盲攻击免疫。"
+						},
+						{
+							"type": "modifier",
+							"id": "5f7413a6-fe5b-4b50-a364-5c1b1e985ec4",
+							"disabled": true,
+							"name": "无头",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 7,
+							"affects": "total",
+							"notes": "你没有“颅脑”与“脸部”作为攻击目标"
+						},
+						{
+							"type": "modifier",
+							"id": "d55bd376-950a-4d29-8e77-dfb65ee5e84d",
+							"disabled": true,
+							"name": "无颈",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"notes": "你的脖子不能够作为打击的目标。你也不能被斩首，掐脖子窒息或绞杀。"
+						},
+						{
+							"type": "modifier",
+							"id": "8b9f3d48-a98a-4f5c-ab1b-456ddd15c297",
+							"disabled": true,
+							"name": "无要害",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"notes": "对“要害”或“胯下”的攻击视为对躯干的攻击。"
+						},
+						{
+							"type": "modifier",
+							"id": "7f960982-01ef-47a7-abc7-7767a9d31b09",
+							"disabled": true,
+							"name": "无生命",
+							"reference": "B61",
+							"cost_type": "points",
+							"cost": 20,
+							"affects": "total",
+							"notes": "变更的伤害调整值：imp & pi++ 是 x1, pi+ 是 x1/2, pi 是 x1/3, pi- 是 x1/5"
+						}
+					],
+					"reference": "B60",
+					"calc": {
+						"points": 45
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "924ddb4a-e2b6-4532-857a-b76636c8dd05",
+					"name": "高压生存",
+					"physical": true,
+					"exotic": true,
+					"levels": "3",
+					"points_per_level": 5,
+					"reference": "B77",
+					"calc": {
+						"points": 15
+					},
+					"notes": "免疫高压",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "50615524-32f1-47ee-9836-d25da51dabc3",
+					"round_down": true,
+					"name": "抵抗力",
+					"physical": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "b084063a-0990-49f9-a0c3-7813707c568c",
+							"name": "免疫新陈代谢伤害",
+							"reference": "B80",
+							"cost_type": "points",
+							"cost": 30,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "82ba7435-3512-499f-824f-4b9928d4c6db",
+							"disabled": true,
+							"name": "@常见：毒药，病症等@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "75432adf-7fda-46fb-8384-3790f69c40dd",
+							"disabled": true,
+							"name": "@偶尔：疾病，摄入的毒药等@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "867d3715-3235-484f-82be-b68eec7502f6",
+							"disabled": true,
+							"name": "@罕见：加速度(极端G力造成的黑视)，高原反应，潜水病(减压病)，晕船，或是太空病。@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "3443d4b5-9739-425c-828c-41e3bb97445f",
+							"name": "完全免疫",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"id": "a571f4c7-af3c-47d1-b60e-ce1748597dba",
+							"disabled": true,
+							"name": "抵抗的HT检定+8",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 0.5
+						},
+						{
+							"type": "modifier",
+							"id": "9b8c4cfd-18cf-4052-b6b9-b101245de9c7",
+							"disabled": true,
+							"name": "抵抗的HT检定+3",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 0.33
+						}
+					],
+					"reference": "B81",
+					"calc": {
+						"points": 30
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "7d2a085a-3157-46db-b657-93ef6891bf8a",
+					"name": "密封",
+					"physical": true,
+					"exotic": true,
+					"base_points": 15,
+					"reference": "B82",
+					"calc": {
+						"points": 15
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "1edaf735-1960-4622-9c84-3e3d0e1889a8",
+					"name": "真空生存",
+					"physical": true,
+					"exotic": true,
+					"base_points": 5,
+					"reference": "B96",
+					"calc": {
+						"points": 5
+					},
+					"categories": [
+						"Advantage"
+					]
+				}
+			]
+		}
+	]
+}
